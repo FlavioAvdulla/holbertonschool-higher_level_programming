@@ -9,3 +9,4 @@ kilometers = miles * 1.60934
 
 #Print results using format()
 print("{} miles equals {} kilometers".format(miles, kilometers))
+print(f"{miles} miles equals {kilometers} kilometers")
