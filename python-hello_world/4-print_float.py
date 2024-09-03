@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-miles = input('Float:')
+string = input('Float:')
 number = 3.14159
 float = float(number)
-print("%.2f\n" % number)
+print("%.2f\n".format(number))
