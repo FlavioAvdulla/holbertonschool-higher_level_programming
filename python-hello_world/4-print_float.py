@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 string = input('Float:')
-number = 3.14159
 try:
 	number = float(string)
 	if number > 0:
