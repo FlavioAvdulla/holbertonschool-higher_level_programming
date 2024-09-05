@@ -5,4 +5,3 @@ def add(a, b):
     if type(b) is not int:
         b = 0
     return a + b
-
