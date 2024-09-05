@@ -1,14 +1,12 @@
+#!/usr/bin/python3
 def uppercase(str):
+    result = ""
     for char in str:
         if 'a' <= char <= 'z':
-            print("{:c}".format(ord(char) - 32), end="")
+            result += "{:c}".format(ord(char) - 32)
         else:
-            print("{:c}".format(ord(char)), end="")
-    print()
+            result += "{:c}".format(ord(char))
+    print(result)
 
-uppercase("holberton")
-uppercase("Holberton School")
-uppercase("Holberton School, 98 battery street")
-uppercase("")
-uppercase("98")
-uppercase("z")
+uppercase("best")
+uppercase("Best School 98 Battery street")
