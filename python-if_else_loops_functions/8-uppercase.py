@@ -4,7 +4,7 @@ def uppercase(str):
         if ord('a') <= ord(char) <= ord('z'):
             char = chr(ord(char) - 32)
         print("{}".format(char), end="")
-    print()
+print()
 
 uppercase("best")
 uppercase("Best School 98 Battery street")
