@@ -2,7 +2,6 @@
 import sys
 
 
-
 def main():
     argv = sys.argv
     argc = len(argv) - 1
