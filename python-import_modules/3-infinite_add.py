@@ -7,5 +7,6 @@ def main():
     total = sum(int(arg) for arg in argv)
     print(total)
 
+
 if __name__ == "__main__":
     main()
