@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 import sys
 
+
+
 def main():
     argv = sys.argv
     argc = len(argv) - 1
@@ -14,6 +16,7 @@ def main():
 
     for i in range(1, argc + 1):
         print("{}: {}".format(i, argv[i]))
+
 
 if __name__ == "__main__":
     main()
