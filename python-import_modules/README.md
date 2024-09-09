@@ -1,48 +1,86 @@
-# Python Project
+# Python Import and Function Projects
 
-## Resources
+This repository contains several Python scripts that demonstrate importing functions from different files and performing various operations. Each script is designed to fulfill specific requirements as outlined below.
 
-### Read or Watch:
-- Modules
-- Command line arguments
-- Pycodestyle – Style Guide for Python Code
+## Table of Contents
+1. Import a Simple Function
+2. My First Toolbox
+3. How to Make a Script Dynamic
+4. Infinite Addition
+5. Who Are You?
+6. Everything Can Be Imported
 
-### Man or Help:
-- `python3`
+## Import a Simple Function
+**File:** `0-add.py`
 
-## Learning Objectives
+This script imports the function `def add(a, b):` from the file `add_0.py` and prints the result of the addition `1 + 2 = 3`.
 
-By the end of this project, you should be able to explain the following concepts to anyone, without the help of Google:
+### Requirements:
+- Use the `print` function with string format to display integers.
+- Assign the value `1` to a variable called `a`.
+- Assign the value `2` to a variable called `b`.
+- Use these two variables as arguments when calling the functions `add` and `print`.
+- `a` and `b` must be defined in 2 different lines: `a = 1` and `b = 2`.
+- The program should print: `<a value> + <b value> = <add(a, b) value>` followed by a new line.
+- Only use the word `add_0` once in your code.
+- Do not use `*` for importing or `__import__`.
+- The code should not be executed when imported.
 
-### General
-- Why Python programming is awesome
-- How to import functions from another file
-- How to use imported functions
-- How to create a module
-- How to use the built-in function `dir()`
-- How to prevent code in your script from being executed when imported
-- How to use command line arguments with your Python programs
+## My First Toolbox
+**File:** `1-calculation.py`
 
-## Requirements
+This script imports functions from the file `calculator_1.py`, performs some mathematical operations, and prints the results.
 
-### General
-- Allowed editors: `vi`, `vim`, `emacs`
-- All your files will be interpreted/compiled on Ubuntu 22.04 LTS using `python3` (version 3.10.*)
-- All your files should end with a new line
-- The first line of all your files should be exactly `#!/usr/bin/python3`
-- A `README.md` file, at the root of the folder of the project, is mandatory
-- Your code should use the `pycodestyle` (version 2.7.*)
-- All your files must be executable
-- The length of your files will be tested using `wc`
+### Requirements:
+- Do not use the `print` function (with string format to display integers) more than 4 times.
+- Assign the value `10` to a variable `a`.
+- Assign the value `5` to a variable `b`.
+- Use these two variables only as arguments when calling functions (including `print`).
+- `a` and `b` must be defined in 2 different lines: `a = 10` and `b = 5`.
+- The script should call each of the imported functions.
+- Only use the word `calculator_1` once in your file.
+- Do not use `*` for importing or `__import__`.
+- The code should not be executed when imported.
 
-## Project Structure
+## How to Make a Script Dynamic
+**File:** `2-args.py`
 
-- `modules/`: Directory containing all module files.
-- `scripts/`: Directory containing all executable scripts.
-- `tests/`: Directory containing all test files.
+This script prints the number of and the list of its arguments.
 
-## Usage
+### Requirements:
+- The output should be:
+  - `Number of argument(s)` followed by `argument` (if the number is one) or `arguments` (otherwise), followed by `:` (or `.` if no arguments were passed), followed by a new line.
+  - If at least one argument is passed, print one line per argument: the position of the argument (starting at 1) followed by `:`, followed by the argument value and a new line.
+- The code should not be executed when imported.
+- The number of elements of `argv` can be retrieved by using: `len(argv)`.
 
-To run a script, use the following command:
-```bash
-./scripts/your_script.py
+## Infinite Addition
+**File:** `3-infinite_add.py`
+
+This script prints the result of the addition of all arguments.
+
+### Requirements:
+- The output should be the result of the addition of all arguments, followed by a new line.
+- You can cast arguments into integers by using `int()` (you can assume that all arguments can be cast into integers).
+- The code should not be executed when imported.
+
+## Who Are You?
+**File:** `4-hidden_discovery.py`
+
+This script prints all the names defined by the compiled module `hidden_4.pyc`.
+
+### Requirements:
+- This task must be done on the sandbox only.
+- The file `4-hidden_discovery.py` must be located in the folder `/tmp/`.
+- Print one name per line, in alphabetical order.
+- Print only names that do not start with `__`.
+- The code should not be executed when imported.
+
+## Everything Can Be Imported
+**File:** `5-variable_load.py`
+
+This script imports the variable `a` from the file `variable_load_5.py` and prints its value.
+
+### Requirements:
+- Do not use `*` for importing or `__import__`.
+- The code should not be executed when imported.
