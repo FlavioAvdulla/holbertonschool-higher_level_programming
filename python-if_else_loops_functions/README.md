@@ -1,55 +1,97 @@
-# Python Control Flow, Loops, and Functions
+# Python Programming Exercises
 
-## Project Overview
+This repository contains a series of Python programming exercises designed to help you practice and improve your coding skills. Each exercise focuses on a specific concept or task, and the goal is to complete the source code as described.
 
-This project covers essential Python programming concepts, including control flow tools, loops, and functions. By the end of this project, you will be able to explain and use these concepts effectively in your Python programs.
+## Table of Contents
 
-## Resources
+1. Positive anything is better than negative nothing
+2. The last digit
+3. The alphabet game
+4. Alphabet soup
+5. Hexadecimal printing
+6. 00...99
+7. Inventing is a combination of brains and materials
+8. islower
+9. To uppercase
+10. There are only 3 colors, 10 digits, and 7 notes
+11. a + b
+12. a ^ b
+13. Fizz Buzz
 
-### Read or Watch:
-- More Control Flow Tools (Read until “4.6. Defining Functions” included)
-- IndentationError
-- How To Use String Formatters in Python 3
-- Learn to Program 2: Looping
-- Pycodestyle – Style Guide for Python Code
+## Positive anything is better than negative nothing
 
-### Man or Help:
-- `python3`
+**0-positive_or_negative.py:** `0-positive_or_negative.py`
 
-## Learning Objectives
+This program assigns a random signed number to the variable `number` each time it is executed. Complete the source code to print whether the number stored in the variable `number` is positive or negative.
 
-By the end of this project, you should be able to explain the following concepts without external help:
+## The last digit
 
-### General
-- **Importance of Indentation in Python**: Understand why proper indentation is crucial in Python and how it affects code execution.
-- **Using `if` and `if...else` Statements**: Learn how to control the flow of your program using conditional statements.
-- **Comments**: Know how to add comments to your code for better readability and maintenance.
-- **Variable Assignment**: Learn how to assign values to variables.
-- **Using `while` and `for` Loops**: Understand how to iterate over sequences and perform repeated actions.
-- **Break and Continue Statements**: Learn how to control loop execution using `break` and `continue`.
-- **Else Clauses on Loops**: Understand how to use `else` clauses with loops.
-- **The `pass` Statement**: Learn what the `pass` statement does and when to use it.
-- **Using `range`**: Understand how to generate sequences of numbers using `range`.
-- **Functions**: Learn what functions are and how to define and use them.
-- **Return Values**: Understand what happens when a function does not use a return statement.
-- **Scope of Variables**: Learn about variable scope and how it affects your code.
-- **Tracebacks**: Understand what tracebacks are and how to read them.
-- **Arithmetic Operators**: Learn about arithmetic operators and how to use them in Python.
+**1-last_digit.py:** `1-last_digit.py`
 
-## Requirements
+This program assigns a random signed number to the variable `number` each time it is executed. Complete the source code to print the last digit of the number stored in the variable `number`.
 
-### Python Scripts
-- **Editors**: Allowed editors are `vi`, `vim`, and `emacs`.
-- **Execution**: All files will be interpreted/compiled on Ubuntu 20.04 LTS using Python 3.8.*
-- **File Endings**: All files should end with a new line.
-- **Shebang**: The first line of all your files should be exactly `#!/usr/bin/python3`.
-- **README.md**: A `README.md` file at the root of the project folder is mandatory.
-- **Code Style**: Your code should follow the `pycodestyle` (version 2.7.*) guidelines.
-- **Executable Files**: All your files must be executable.
-- **File Length**: The length of your files will be tested using `wc`.
+## The alphabet game
 
-## Usage
+**2-print_alphabet.py:** `2-print_alphabet.py`
 
-To run the Python scripts, use the following command:
-```bash
-./filename.py
+Write a program that prints the ASCII alphabet in lowercase, not followed by a new line.
+
+## Alphabet soup
+
+**3-print_alphabt.py:** `3-print_alphabt.py`
+
+Write a program that prints the ASCII alphabet in lowercase, not followed by a new line.
+
+## Hexadecimal printing
+
+**4-print_hexa.py:** `4-print_hexa.py`
+
+Write a program that prints all numbers from 0 to 98 in decimal and in hexadecimal.
+
+## 00...99
+
+**5-print_comb2.py:** `5-print_comb2.py`
+
+Write a program that prints numbers from 0 to 99.
+
+## Inventing is a combination of brains and materials
+
+**6-print_comb3.py:** `6-print_comb3.py`
+
+Write a program that prints all possible different combinations of two digits.
+
+## islower
+
+**7-islower.py:** `7-islower.py`
+
+Write a function that checks for lowercase characters.
+
+## To uppercase
+
+**8-uppercase.py:** `8-uppercase.py`
+
+Write a function that prints a string in uppercase followed by a new line.
+
+## There are only 3 colors, 10 digits, and 7 notes
+
+**9-print_last_digit.py:** `9-print_last_digit.py`
+
+Write a function that prints the last digit of a number.
+
+## a + b
+
+**10-add.py:** `10-add.py`
+
+Write a function that adds two integers and returns the result.
+
+## a ^ b
+
+**11-pow.py:** `11-pow.py`
+
+Write a function that computes `a` to the power of `b` and returns the value.
+
+## Fizz Buzz
+
+**12-fizzbuzz.py:** `12-fizzbuzz.py`
+
+Write a function that prints the numbers from 1 to 100 separated by a space.

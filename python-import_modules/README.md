@@ -11,7 +11,7 @@ This repository contains several Python scripts that demonstrate importing funct
 6. Everything Can Be Imported
 
 ## Import a Simple Function
-**File:** `0-add.py`
+**0-add.py:** `0-add.py`
 
 This script imports the function `def add(a, b):` from the file `add_0.py` and prints the result of the addition `1 + 2 = 3`.
 
@@ -27,7 +27,7 @@ This script imports the function `def add(a, b):` from the file `add_0.py` and p
 - The code should not be executed when imported.
 
 ## My First Toolbox
-**File:** `1-calculation.py`
+**1-calculation.py:** `1-calculation.py`
 
 This script imports functions from the file `calculator_1.py`, performs some mathematical operations, and prints the results.
 
@@ -43,7 +43,7 @@ This script imports functions from the file `calculator_1.py`, performs some mat
 - The code should not be executed when imported.
 
 ## How to Make a Script Dynamic
-**File:** `2-args.py`
+**2-args.py:** `2-args.py`
 
 This script prints the number of and the list of its arguments.
 
@@ -55,7 +55,7 @@ This script prints the number of and the list of its arguments.
 - The number of elements of `argv` can be retrieved by using: `len(argv)`.
 
 ## Infinite Addition
-**File:** `3-infinite_add.py`
+**3-infinite_add.py:** `3-infinite_add.py`
 
 This script prints the result of the addition of all arguments.
 
@@ -65,7 +65,7 @@ This script prints the result of the addition of all arguments.
 - The code should not be executed when imported.
 
 ## Who Are You?
-**File:** `4-hidden_discovery.py`
+**4-hidden_discovery.py:** `4-hidden_discovery.py`
 
 This script prints all the names defined by the compiled module `hidden_4.pyc`.
 
@@ -77,7 +77,7 @@ This script prints all the names defined by the compiled module `hidden_4.pyc`.
 - The code should not be executed when imported.
 
 ## Everything Can Be Imported
-**File:** `5-variable_load.py`
+**5-variable_load.py:** `5-variable_load.py`
 
 This script imports the variable `a` from the file `variable_load_5.py` and prints its value.
 
