@@ -5,26 +5,23 @@ This script generates a random integer between -10 and 10 and prints whether the
 Modules:
     random: This module implements pseudo-random number generators for various distributions.
 
+Variables:
+    number (int): A randomly generated integer between -10 and 10.
+
 Functions:
     None
 
-Variables:
-    number (int): A random integer between -10 and 10.
-
-Usage:
-    Run the script directly to see the output.
-
-Example:
-    $ ./script.py
-    5 is positive
+Execution:
+    The script performs the following steps:
+    1. Generates a random integer between -10 and 10.
+    2. Checks if the number is positive, negative, or zero.
+    3. Prints a message indicating whether the number is positive, negative, or zero.
 """
 
 import random
 
-# Generate a random integer between -10 and 10
 number = random.randint(-10, 10)
 
-# Check if the number is positive, negative, or zero and print the result
 if number > 0:
     print(f"{number} is positive")
 elif number < 0:

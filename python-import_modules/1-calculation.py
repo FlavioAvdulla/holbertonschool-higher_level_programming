@@ -1,11 +1,4 @@
 #!/usr/bin/python3
-"""
-This script performs basic arithmetic operations (addition, subtraction,
-multiplication, and division) on two numbers and prints the results.
-
-The numbers to be operated on are defined within the script.
-"""
-
 from calculator_1 import add, sub, mul, div
 
 a = 10
