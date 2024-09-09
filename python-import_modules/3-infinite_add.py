@@ -1,19 +1,31 @@
 #!/usr/bin/python3
 """
-This script imports a variable from another module and prints its value.
+This script calculates and prints the sum of command-line arguments passed to it.
 
 Modules:
-    variable_load_5: A module that contains the variable `a`.
+    sys: Provides access to command-line arguments.
+
+Functions:
+    main(): The main function that processes and sums the command-line arguments.
 
 Usage:
-    Run this script from the command line.
+    Run this script from the command line with any number of integer arguments.
     Example:
-        $ ./script_name.py
+        $ ./script_name.py 1 2 3
 
     Output:
-        - Prints the value of the variable `a` imported from the module `variable_load_5`.
+        - Prints the sum of the provided integer arguments.
 """
 
+import sys
+
+def main():
+    """
+    Processes command-line arguments, calculates their sum, and prints the result.
+    """
+    argv = sys.argv[1:]
+    total = sum(int(arg) for arg in argv)
+    print(total)
+
 if __name__ == "__main__":
-    from variable_load_5 import a
-    print(a)
+    main()
