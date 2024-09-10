@@ -6,4 +6,3 @@ for row in matrix:
             print(" ", end="")
         print("{:d}".format(num), end="")
     print()
-
