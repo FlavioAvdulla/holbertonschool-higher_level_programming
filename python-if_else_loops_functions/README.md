@@ -1,52 +1,90 @@
-# Python Programming Exercises
+# Python Programming Tasks
 
-This repository contains a series of Python programming exercises designed to help you practice and improve your coding skills. Each exercise focuses on a specific concept or task, and the goal is to complete the source code as described.
+This repository contains a collection of Python programs designed to perform various tasks. Each task is implemented in a separate Python file.
 
 ## Table of Contents
 
-1. Positive anything is better than negative nothing
-2. The last digit
-3. The alphabet game
-4. Alphabet soup
-5. Hexadecimal printing
+1. Positive Anything is Better than Negative Nothing
+2. The Last Digit
+3. The Alphabet Game
+4. Alphabet Soup
+5. Hexadecimal Printing
 6. 00...99
-7. Inventing is a combination of brains and materials
+7. Inventing is a Combination of Brains and Materials
 8. islower
-9. To uppercase
-10. There are only 3 colors, 10 digits, and 7 notes
+9. To Uppercase
+10. There are Only 3 Colors, 10 Digits, and 7 Notes; It's What We Do with Them That's Important
 11. a + b
 12. a ^ b
 13. Fizz Buzz
 
-## Positive anything is better than negative nothing
+## Positive Anything is Better than Negative Nothing
 
 **File:** [Click Here](0-positive_or_negative.py)
 
-This program assigns a random signed number to the variable `number` each time it is executed. Complete the source code to print whether the number stored in the variable `number` is positive or negative.
+This program assigns a random signed number to the variable `number` each time it is executed. It then prints whether the number stored in the variable `number` is positive, negative, or zero.
 
-## The last digit
+- The variable `number` will store a different value every time you run this program.
+- You don’t have to understand what `import`, `random.randint` do. Please do not touch this code.
+
+**Output:**
+- The number, followed by:
+  - if the number is greater than 0: `is positive`
+  - if the number is 0: `is zero`
+  - if the number is less than 0: `is negative`
+- Followed by a new line.
+
+## The Last Digit
 
 **File:** [Click Here](1-last_digit.py)
 
-This program assigns a random signed number to the variable `number` each time it is executed. Complete the source code to print the last digit of the number stored in the variable `number`.
+This program assigns a random signed number to the variable `number` each time it is executed. It then prints the last digit of the number stored in the variable `number`.
 
-## The alphabet game
+- The variable `number` will store a different value every time you run this program.
+- You don’t have to understand what `import`, `random.randint` do. Please do not touch this code. This line should not change: `number = random.randint(-10000, 10000)`
+
+**Output:**
+- The string `Last digit of`, followed by:
+  - the number, followed by
+  - the string `is`, followed by the last digit of `number`, followed by:
+    - if the last digit is greater than 5: the string `and is greater than 5`
+    - if the last digit is 0: the string `and is 0`
+    - if the last digit is less than 6 and not 0: the string `and is less than 6 and not 0`
+- Followed by a new line.
+
+## The Alphabet Game
 
 **File:** [Click Here](2-print_alphabet.py)
 
-Write a program that prints the ASCII alphabet in lowercase, not followed by a new line.
+Write a program that prints the ASCII alphabet, in lowercase, not followed by a new line.
 
-## Alphabet soup
+- Use only one `print` function with string format.
+- Use only one loop in your code.
+- You are not allowed to store characters in a variable.
+- You are not allowed to import any module.
+
+## Alphabet Soup
 
 **File:** [Click Here](3-print_alphabt.py)
 
-Write a program that prints the ASCII alphabet in lowercase, not followed by a new line.
+Write a program that prints the ASCII alphabet, in lowercase, not followed by a new line.
 
-## Hexadecimal printing
+- Print all the letters except `q` and `e`.
+- Use only one `print` function with string format.
+- Use only one loop in your code.
+- You are not allowed to store characters in a variable.
+- You are not allowed to import any module.
+
+## Hexadecimal Printing
 
 **File:** [Click Here](4-print_hexa.py)
 
 Write a program that prints all numbers from 0 to 98 in decimal and in hexadecimal.
+
+- Use only one `print` function with string format.
+- Use only one loop in your code.
+- You are not allowed to store numbers or strings in a variable.
+- You are not allowed to import any module.
 
 ## 00...99
 
@@ -54,29 +92,66 @@ Write a program that prints all numbers from 0 to 98 in decimal and in hexadecim
 
 Write a program that prints numbers from 0 to 99.
 
-## Inventing is a combination of brains and materials
+- Numbers must be separated by `,`, followed by a space.
+- Numbers should be printed in ascending order, with two digits.
+- The last number should be followed by a new line.
+- Use no more than 2 `print` functions with string format.
+- Use only one loop in your code.
+- You are not allowed to store numbers or strings in a variable.
+- You are not allowed to import any module.
+
+## Inventing is a Combination of Brains and Materials
 
 **File:** [Click Here](6-print_comb3.py)
 
 Write a program that prints all possible different combinations of two digits.
 
+- Numbers must be separated by `,`, followed by a space.
+- The two digits must be different.
+- `01` and `10` are considered the same combination of the two digits `0` and `1`.
+- Print only the smallest combination of two digits.
+- Numbers should be printed in ascending order, with two digits.
+- The last number should be followed by a new line.
+- Use no more than 3 `print` functions with string format.
+- Use no more than 2 loops in your code.
+- You are not allowed to store numbers or strings in a variable.
+- You are not allowed to import any module.
+
 ## islower
 
 **File:** [Click Here](7-islower.py)
 
-Write a function that checks for lowercase characters.
+Write a function that checks for lowercase character.
 
-## To uppercase
+- **Prototype:** `def islower(c):`
+- Returns `True` if `c` is lowercase.
+- Returns `False` otherwise.
+- You are not allowed to import any module.
+- You are not allowed to use `str.upper()` and `str.isupper()`.
+- Tips: `ord()`
+
+## To Uppercase
 
 **File:** [Click Here](8-uppercase.py)
 
 Write a function that prints a string in uppercase followed by a new line.
 
-## There are only 3 colors, 10 digits, and 7 notes
+- **Prototype:** `def uppercase(str):`
+- Use no more than 2 `print` functions with string format.
+- Use only one loop in your code.
+- You are not allowed to import any module.
+- You are not allowed to use `str.upper()` and `str.isupper()`.
+- Tips: `ord()`
+
+## There are Only 3 Colors, 10 Digits, and 7 Notes; It's What We Do with Them That's Important
 
 **File:** [Click Here](9-print_last_digit.py)
 
 Write a function that prints the last digit of a number.
+
+- **Prototype:** `def print_last_digit(number):`
+- Returns the value of the last digit.
+- You are not allowed to import any module.
 
 ## a + b
 
@@ -84,14 +159,28 @@ Write a function that prints the last digit of a number.
 
 Write a function that adds two integers and returns the result.
 
+- **Prototype:** `def add(a, b):`
+- Returns the value of `a + b`.
+- You are not allowed to import any module.
+
 ## a ^ b
 
 **File:** [Click Here](11-pow.py)
 
 Write a function that computes `a` to the power of `b` and returns the value.
 
+- **Prototype:** `def pow(a, b):`
+- Returns the value of `a ^ b`.
+- You are not allowed to import any module.
+
 ## Fizz Buzz
 
 **File:** [Click Here](12-fizzbuzz.py)
 
 Write a function that prints the numbers from 1 to 100 separated by a space.
+
+- For multiples of three, print `Fizz` instead of the number and for multiples of five, print `Buzz`.
+- For numbers which are multiples of both three and five, print `FizzBuzz`.
+- **Prototype:** `def fizzbuzz():`
+- Each element should be followed by a space.
+- You are not allowed to import any module.
