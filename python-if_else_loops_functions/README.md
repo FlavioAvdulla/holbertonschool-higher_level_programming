@@ -20,7 +20,7 @@ This repository contains a series of Python programming exercises designed to he
 
 ## Positive anything is better than negative nothing
 
-**File:** `0-positive_or_negative.py`
+**File:** [Click Here](0-positive_or_negative.py)
 
 This program assigns a random signed number to the variable `number` each time it is executed. Complete the source code to print whether the number stored in the variable `number` is positive or negative.
 
