@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 def common_elements(set_1, set_2):
     result = set()
-    for element not in set_1:
+    for element in set_1:
         if element not in set_2:
             result.add(element)
-    for element not in set_2:
+    for element in set_2:
         if element not in set_1:
             result.add(element)
     return result
