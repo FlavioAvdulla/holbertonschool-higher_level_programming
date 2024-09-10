@@ -1,4 +1,4 @@
 #!/usr/bin/python3
 def common_elements(set_1, set_2):
-    set_3 = set_1.symmetric_difference(set_2)
-    return set_3
+    c_set = set_1.common_elements(set_2)
+    return c_set
