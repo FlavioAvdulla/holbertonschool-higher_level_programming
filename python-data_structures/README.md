@@ -1,59 +1,187 @@
 # Python List and String Manipulation Tasks
 
-This repository contains a series of Python functions to perform various list and string manipulations. Each task is implemented in its respective Python file.
+This repository contains a series of Python functions for manipulating lists and strings. Each task is implemented in a separate Python file.
 
-## Tasks
+## Table of Contents
 
-### 0. Print a list of integers
+1. Print a List of Integers
+2. Secure Access to an Element in a List
+3. Replace Element
+4. Print a List of Integers in Reverse
+5. Replace in a Copy
+6. Remove Characters 'c' and 'C'
+7. Print a Matrix of Integers
+8. Tuples Addition
+9. More Returns
+10. Find the Max
+11. Only by 2
+12. Delete at
+13. Switch
+
+## Print a List of Integers
+
+**File:** [Click Here](0-print_list_integer.py)
+
 Write a function that prints all integers of a list.
-- **File:** [Click Here](0-print_list_integer.py)
 
-### 1. Secure access to an element in a list
+- **Prototype:** `def print_list_integer(my_list=[]):`
+- **Format:** One integer per line.
+- **Constraints:**
+  - You are not allowed to import any module.
+  - You can assume that the list only contains integers.
+  - You are not allowed to cast integers into strings.
+  - You have to use `str.format()` to print integers.
+
+## Secure Access to an Element in a List
+
+**File:** [Click Here](1-element_at.py)
+
 Write a function that retrieves an element from a list.
-- **File:** [Click Here](1-element_at.py)
-### 2. Replace element
+
+- **Prototype:** `def element_at(my_list, idx):`
+- **Constraints:**
+  - If `idx` is negative, the function should return `None`.
+  - If `idx` is out of range (greater than the number of elements in `my_list`), the function should return `None`.
+  - You are not allowed to import any module.
+  - You are not allowed to use `try/except`.
+
+## Replace Element
+
+**File:** [Click Here](2-replace_in_list.py)
+
 Write a function that replaces an element of a list at a specific position.
-- **File:** [Click Here](2-replace_in_list.py)
 
-### 3. Print a list of integers... in reverse!
+- **Prototype:** `def replace_in_list(my_list, idx, element):`
+- **Constraints:**
+  - If `idx` is negative, the function should not modify anything and return the original list.
+  - If `idx` is out of range (greater than the number of elements in `my_list`), the function should not modify anything and return the original list.
+  - You are not allowed to import any module.
+  - You are not allowed to use `try/except`.
+
+## Print a List of Integers in Reverse
+
+**File:** [Click Here](3-print_reversed_list_integer.py)
+
 Write a function that prints all integers of a list, in reverse order.
-- **File:** [Click Here](3-print_reversed_list_integer.py)
 
-### 4. Replace in a copy
+- **Prototype:** `def print_reversed_list_integer(my_list=[]):`
+- **Format:** One integer per line.
+- **Constraints:**
+  - You are not allowed to import any module.
+  - You can assume that the list only contains integers.
+  - You are not allowed to cast integers into strings.
+  - You have to use `str.format()` to print integers.
+
+## Replace in a Copy
+
+**File:** [Click Here](4-new_in_list.py)
+
 Write a function that replaces an element in a list at a specific position without modifying the original list.
-- **File:** [Click Here](4-new_in_list.py)
 
-### 5. Can you C me now?
-Write a function that removes all characters `c` and `C` from a string.
-- **File:** [Click Here](5-no_c.py)
+- **Prototype:** `def new_in_list(my_list, idx, element):`
+- **Constraints:**
+  - If `idx` is negative, the function should return a copy of the original list.
+  - If `idx` is out of range (greater than the number of elements in `my_list`), the function should return a copy of the original list.
+  - You are not allowed to import any module.
+  - You are not allowed to use `try/except`.
 
-### 6. Lists of lists = Matrix
+## Remove Characters 'c' and 'C'
+
+**File:** [Click Here](5-no_c.py)
+
+Write a function that removes all characters 'c' and 'C' from a string.
+
+- **Prototype:** [Click Here](def no_c(my_string):)
+- **Constraints:**
+  - The function should return the new string.
+  - You are not allowed to import any module.
+  - You are not allowed to use `str.replace()`.
+
+## Print a Matrix of Integers
+
+**File:** [Click Here](6-print_matrix_integer.py)
+
 Write a function that prints a matrix of integers.
-- **File:** [Click Here](6-print_matrix_integer.py)
 
-### 7. Tuples addition
+- **Prototype:** `def print_matrix_integer(matrix=[[]]):`
+- **Format:** See example.
+- **Constraints:**
+  - You are not allowed to import any module.
+  - You can assume that the list only contains integers.
+  - You are not allowed to cast integers into strings.
+  - You have to use `str.format()` to print integers.
+
+## Tuples Addition
+
+**File:** [Click Here](7-add_tuple.py)
+
 Write a function that adds 2 tuples.
-- **File:** [Click Here](7-add_tuple.py)
 
-### 8. More returns!
+- **Prototype:** `def add_tuple(tuple_a=(), tuple_b=()):`
+- **Returns:** A tuple with 2 integers:
+  - The first element should be the addition of the first element of each argument.
+  - The second element should be the addition of the second element of each argument.
+- **Constraints:**
+  - You are not allowed to import any module.
+  - You can assume that the two tuples will only contain integers.
+  - If a tuple is smaller than 2, use the value 0 for each missing integer.
+  - If a tuple is bigger than 2, use only the first 2 integers.
+
+## More Returns
+
+**File:** [Click Here](8-multiple_returns.py)
+
 Write a function that returns a tuple with the length of a string and its first character.
-- **File:** [Click Here](8-multiple_returns.py)
 
-### 9. Find the max
+- **Prototype:** `def multiple_returns(sentence):`
+- **Constraints:**
+  - If the sentence is empty, the first character should be equal to `None`.
+  - You are not allowed to import any module.
+
+## Find the Max
+
+**File:** [Click Here](9-max_integer.py)
+
 Write a function that finds the biggest integer of a list.
-- **File:** [Click Here](9-max_integer.py)
 
-### 10. Only by 2
+- **Prototype:** `def max_integer(my_list=[]):`
+- **Constraints:**
+  - If the list is empty, return `None`.
+  - You can assume that the list only contains integers.
+  - You are not allowed to import any module.
+  - You are not allowed to use the builtin `max()`.
+
+## Only by 2
+
+**File:** [Click Here](10-divisible_by_2.py)
+
 Write a function that finds all multiples of 2 in a list.
-- **File:** [Click Here](10-divisible_by_2.py)
 
-### 11. Delete at
+- **Prototype:** `def divisible_by_2(my_list=[]):`
+- **Returns:** A new list with `True` or `False`, depending on whether the integer at the same position in the original list is a multiple of 2.
+- **Constraints:**
+  - The new list should have the same size as the original list.
+  - You are not allowed to import any module.
+
+## Delete at
+
+**File:** [Click Here](11-delete_at.py)
+
 Write a function that deletes the item at a specific position in a list.
-- **File:** [Click Here](11-delete_at.py)
 
-### 12. Switch
+- **Prototype:** `def delete_at(my_list=[], idx=0):`
+- **Constraints:**
+  - If `idx` is negative or out of range, nothing changes (returns the same list).
+  - You are not allowed to use `pop()`.
+  - You are not allowed to import any module.
+
+## Switch
+
+**File:** [Click Here](12-switch.py)
+
 Complete the source code in order to switch the value of `a` and `b`.
-- **File:** [Click Here](12-switch.py)
 
-## Usage
-Each file contains a function that can be imported and used in other Python scripts. To use a function, simply import it from its respective file.
+- **Source Code:** You can find the source code here.
+- **Instructions:** Your code should be inserted where the comment is (line 4).
+- **Constraints:**
+  - Your program should be exactly 5 lines long.
