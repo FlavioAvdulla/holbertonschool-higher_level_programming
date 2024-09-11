@@ -1,4 +1,4 @@
-def roman_to_int(s):
+def roman_to_int(c):
     roman_to_int = {
         'I': 1, 'V': 5, 'X': 10, 'L': 50,
         'C': 100, 'D': 500, 'M': 1000
@@ -7,7 +7,7 @@ def roman_to_int(s):
     total = 0
     prev_value = 0
     
-    for char in s:
+    for char in c:
         curr_value = roman_to_int[char]
         
         if prev_value < curr_value:
