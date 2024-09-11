@@ -74,3 +74,26 @@
 # set2 = {3, 4, 5}
 # union_set = set1 ^ set2
 # print(union_set)
+
+
+# my_dict = {
+# "name": "Alice",
+# "Age": 25,
+# "City": "Lushnjë"
+# }
+
+# del my_dict["Age"]
+# print(my_dict)
+
+
+my_dict = {
+"name": "Alice",
+"Age": 25,
+"City": "Lushnjë"
+}
+
+keys_list = list(my_dict.keys())
+values_list = list(my_dict.values())
+
+print(f"Keys:{keys_list}")
+print(f"Values:{values_list}")
