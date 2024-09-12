@@ -20,7 +20,7 @@ This repository contains a collection of Python programs designed to perform var
 
 ## Positive Anything is Better than Negative Nothing
 
-**File:** [Click Here](0-positive_or_negative.py)
+**File:** [0-positive_or_negative.py](0-positive_or_negative.py)
 
 This program assigns a random signed number to the variable `number` each time it is executed. It then prints whether the number stored in the variable `number` is positive, negative, or zero.
 
@@ -36,7 +36,7 @@ This program assigns a random signed number to the variable `number` each time i
 
 ## The Last Digit
 
-**File:** [Click Here](1-last_digit.py)
+**File:** [1-last_digit.py](1-last_digit.py)
 
 This program assigns a random signed number to the variable `number` each time it is executed. It then prints the last digit of the number stored in the variable `number`.
 
@@ -54,7 +54,7 @@ This program assigns a random signed number to the variable `number` each time i
 
 ## The Alphabet Game
 
-**File:** [Click Here](2-print_alphabet.py)
+**File:** [2-print_alphabet.py](2-print_alphabet.py)
 
 Write a program that prints the ASCII alphabet, in lowercase, not followed by a new line.
 
@@ -65,7 +65,7 @@ Write a program that prints the ASCII alphabet, in lowercase, not followed by a 
 
 ## Alphabet Soup
 
-**File:** [Click Here](3-print_alphabt.py)
+**File:** [3-print_alphabt.py](3-print_alphabt.py)
 
 Write a program that prints the ASCII alphabet, in lowercase, not followed by a new line.
 
@@ -77,7 +77,7 @@ Write a program that prints the ASCII alphabet, in lowercase, not followed by a 
 
 ## Hexadecimal Printing
 
-**File:** [Click Here](4-print_hexa.py)
+**File:** [4-print_hexa.py](4-print_hexa.py)
 
 Write a program that prints all numbers from 0 to 98 in decimal and in hexadecimal.
 
@@ -88,7 +88,7 @@ Write a program that prints all numbers from 0 to 98 in decimal and in hexadecim
 
 ## 00...99
 
-**File:** [Click Here](5-print_comb2.py)
+**File:** [5-print_comb2.py](5-print_comb2.py)
 
 Write a program that prints numbers from 0 to 99.
 
@@ -102,7 +102,7 @@ Write a program that prints numbers from 0 to 99.
 
 ## Inventing is a Combination of Brains and Materials
 
-**File:** [Click Here](6-print_comb3.py)
+**File:** [6-print_comb3.py](6-print_comb3.py)
 
 Write a program that prints all possible different combinations of two digits.
 
@@ -119,7 +119,7 @@ Write a program that prints all possible different combinations of two digits.
 
 ## islower
 
-**File:** [Click Here](7-islower.py)
+**File:** [7-islower.py](7-islower.py)
 
 Write a function that checks for lowercase character.
 
@@ -132,7 +132,7 @@ Write a function that checks for lowercase character.
 
 ## To Uppercase
 
-**File:** [Click Here](8-uppercase.py)
+**File:** [8-uppercase.py](8-uppercase.py)
 
 Write a function that prints a string in uppercase followed by a new line.
 
@@ -145,7 +145,7 @@ Write a function that prints a string in uppercase followed by a new line.
 
 ## There are Only 3 Colors, 10 Digits, and 7 Notes; It's What We Do with Them That's Important
 
-**File:** [Click Here](9-print_last_digit.py)
+**File:** [9-print_last_digit.py](9-print_last_digit.py)
 
 Write a function that prints the last digit of a number.
 
@@ -155,7 +155,7 @@ Write a function that prints the last digit of a number.
 
 ## a + b
 
-**File:** [Click Here](10-add.py)
+**File:** [10-add.py](10-add.py)
 
 Write a function that adds two integers and returns the result.
 
@@ -165,7 +165,7 @@ Write a function that adds two integers and returns the result.
 
 ## a ^ b
 
-**File:** [Click Here](11-pow.py)
+**File:** [11-pow.py](11-pow.py)
 
 Write a function that computes `a` to the power of `b` and returns the value.
 
@@ -175,7 +175,7 @@ Write a function that computes `a` to the power of `b` and returns the value.
 
 ## Fizz Buzz
 
-**File:** [Click Here](12-fizzbuzz.py)
+**File:** [12-fizzbuzz.py](12-fizzbuzz.py)
 
 Write a function that prints the numbers from 1 to 100 separated by a space.
 
