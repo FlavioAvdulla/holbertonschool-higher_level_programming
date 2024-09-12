@@ -20,7 +20,7 @@ This repository contains a collection of Python functions designed to perform va
 
 ## Squared Simple
 
-**File:** [Click Here](0-square_matrix_simple.py)
+**File:** [0-square_matrix_simple.py](0-square_matrix_simple.py)
 
 Write a function that computes the square value of all integers in a matrix.
 
@@ -36,7 +36,7 @@ Write a function that computes the square value of all integers in a matrix.
 
 ## Search and Replace
 
-**File:** [Click Here](1-search_replace.py)
+**File:** [1-search_replace.py](1-search_replace.py)
 
 Write a function that replaces all occurrences of an element by another in a new list.
 
@@ -49,7 +49,7 @@ Write a function that replaces all occurrences of an element by another in a new
 
 ## Unique Addition
 
-**File:** [Click Here](2-uniq_add.py)
+**File:** [2-uniq_add.py](2-uniq_add.py)
 
 Write a function that adds all unique integers in a list (only once for each integer).
 
@@ -59,7 +59,7 @@ Write a function that adds all unique integers in a list (only once for each int
 
 ## Present in Both
 
-**File:** [Click Here](3-common_elements.py)
+**File:** [3-common_elements.py](3-common_elements.py)
 
 Write a function that returns a set of common elements in two sets.
 
@@ -69,7 +69,7 @@ Write a function that returns a set of common elements in two sets.
 
 ## Only Differents
 
-**File:** [Click Here](4-only_diff_elements.py)
+**File:** [4-only_diff_elements.py](4-only_diff_elements.py)
 
 Write a function that returns a set of all elements present in only one set.
 
@@ -79,7 +79,7 @@ Write a function that returns a set of all elements present in only one set.
 
 ## Number of Keys
 
-**File:** [Click Here](5-number_keys.py)
+**File:** [5-number_keys.py](5-number_keys.py)
 
 Write a function that returns the number of keys in a dictionary.
 
@@ -89,7 +89,7 @@ Write a function that returns the number of keys in a dictionary.
 
 ## Print Sorted Dictionary
 
-**File:** [Click Here](6-print_sorted_dictionary.py)
+**File:** [6-print_sorted_dictionary.py](6-print_sorted_dictionary.py)
 
 Write a function that prints a dictionary by ordered keys.
 
@@ -103,7 +103,7 @@ Write a function that prints a dictionary by ordered keys.
 
 ## Update Dictionary
 
-**File:** [Click Here](7-update_dictionary.py)
+**File:** [7-update_dictionary.py](7-update_dictionary.py)
 
 Write a function that replaces or adds key/value in a dictionary.
 
@@ -117,7 +117,7 @@ Write a function that replaces or adds key/value in a dictionary.
 
 ## Simple Delete by Key
 
-**File:** [Click Here](8-simple_delete.py)
+**File:** [8-simple_delete.py](8-simple_delete.py)
 
 Write a function that deletes a key in a dictionary.
 
@@ -129,7 +129,7 @@ Write a function that deletes a key in a dictionary.
 
 ## Multiply by 2
 
-**File:** [Click Here](9-multiply_by_2.py)
+**File:** [9-multiply_by_2.py](9-multiply_by_2.py)
 
 Write a function that returns a new dictionary with all values multiplied by 2.
 
@@ -141,7 +141,7 @@ Write a function that returns a new dictionary with all values multiplied by 2.
 
 ## Best Score
 
-**File:** [Click Here](10-best_score.py)
+**File:** [10-best_score.py](10-best_score.py)
 
 Write a function that returns a key with the biggest integer value.
 
@@ -154,7 +154,7 @@ Write a function that returns a key with the biggest integer value.
 
 ## Multiply by Using Map
 
-**File:** [Click Here](11-multiply_list_map.py)
+**File:** [11-multiply_list_map.py](11-multiply_list_map.py)
 
 Write a function that returns a list with all values multiplied by a number without using any loops.
 
@@ -170,7 +170,7 @@ Write a function that returns a list with all values multiplied by a number with
 
 ## Roman to Integer
 
-**File:** [Click Here](12-roman_to_int.py)
+**File:** [12-roman_to_int.py](12-roman_to_int.py)
 
 Create a function `def roman_to_int(roman_string):` that converts a [Roman numeral](https://en.wikipedia.org/wiki/Roman_numerals) to an integer.
 
