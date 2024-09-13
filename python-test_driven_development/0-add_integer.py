@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""
+This module provides a function to add two integers or floats.
+"""
 def add_integer(a, b=98):
     """
     Adds two integers or floats after casting them to integers.
