@@ -1,41 +1,31 @@
 #!/usr/bin/python3
-"""
-This module provides a function to divide all elements of a matrix.
-"""
+"""Python program to add 2 integers"""
 
 
 def matrix_divided(matrix, div):
-    """
-    Divides all elements of a matrix by a given divisor.
+    """ Function to divide values in a matrix
 
     Args:
-        matrix: A list of lists of inetegers or floats.
-        div: The divisor, must be an integer or float.
+        matrix (list): a list
+        div (int): divider
 
     Returns:
-    A new matrix with all elements divided by div, rounded to 2 decimal places.
-
-    Raises:
-        TypeError: If matrix is not a list of lists of integers/floats,
-        if each row of the matrix is not of the same size,
-        or if div is not a number.
-    ZeriDivisionError: If div is zero.
+        Divided list.
     """
-
-    if not isinstance(matrix, list) or not all(isinstance(row, list) for row in matrix):
-        raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
-    if not all(isinstance(element, (int, float)) for row in matrix for element in row):
-        raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
-
-
-    row_length = len(matrix[0])
-    if not all(len(row) == row_length for row in matrix):
-        raise TypeError("Each row of the matrix must have the same size")
-
-    if not isinstance(div, (int, float)):
+    string = "matrix must be a matrix (list of lists) of integers/floats"
+    if type(div) not in [int, float]:
         raise TypeError("div must be a number")
+    if matrix is list:
+        raise TypeError(string)
+    if not isinstance(matrix[0], list):
+        raise TypeError(string)
+    if not all(isinstance(val, int) or
+               isinstance(val, float) for row in matrix for val in row):
+        raise TypeError(string)
+    if len(matrix) > 1:
+        if all((len(row) != len(matrix[0]) for row in matrix[1:])):
+            raise TypeError("Each row of the matrix must have the same size")
 
-    if div == 0:
-        raise ZeroDivisionError("division by zero")
+    div_matrix = [[round(value / div, 2) for value in row] for row in matrix]
 
-    return [[round(element / div, 2) for element in row] for row in matrix]
+    return div_matrix
