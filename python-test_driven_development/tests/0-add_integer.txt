@@ -1,0 +1,13 @@
+"""
+Adds two integers or floats after castign them to integers.
+
+Args:
+    a: The first number, must be an integer or float.
+    b: The second number, must be an inetger or float (default is 98).
+
+returns:
+    The integer addition of a and b.
+
+Raises:
+    TypeError: If either a or b is not an integer or float.
+"""
