@@ -36,7 +36,7 @@ Write a function that divides all elements of a matrix.
 - Returns a new matrix.
 - You are not allowed to import any module.
 
-**File:** `2-matrix_divided.py`, `tests/2-matrix_divided.txt`
+**File:** [2-matrix_divided.py](2-matrix_divided.py), [tests/2-matrix_divided.txt](tests/2-matrix_divided.txt)
 
 ## Say My Name
 
@@ -46,7 +46,7 @@ Write a function that prints `My name is <first name> <last name>`.
 - `first_name` and `last_name` must be strings otherwise, raise a `TypeError` exception with the message `first_name must be a string` or `last_name must be a string`.
 - You are not allowed to import any module.
 
-**File:** `3-say_my_name.py`, `tests/3-say_my_name.txt`
+**File:** [3-say_my_name.py](3-say_my_name.py), [tests/3-say_my_name.txt](tests/3-say_my_name.txt)
 
 ## Print Square
 
@@ -59,7 +59,7 @@ Write a function that prints a square with the character `#`.
 - If `size` is a float and is less than 0, raise a `TypeError` exception with the message `size must be an integer`.
 - You are not allowed to import any module.
 
-**File:** `4-print_square.py`, `tests/4-print_square.txt`
+**File:** [4-print_square.py](4-print_square.py), [tests/4-print_square.txt](tests/4-print_square.txt)
 
 ## Text Indentation
 
@@ -70,7 +70,7 @@ Write a function that prints a text with 2 new lines after each of these charact
 - There should be no space at the beginning or at the end of each printed line.
 - You are not allowed to import any module.
 
-**File:** `5-text_indentation.py`, `tests/5-text_indentation.txt`
+**File:** [5-text_indentation.py](5-text_indentation.py), [tests/5-text_indentation.txt](tests/5-text_indentation.txt)
 
 ## Max Integer - Unittest
 
@@ -85,4 +85,4 @@ In this task, you will write unittests for the function `def max_integer(list=[]
 - All tests you make must be passable by the function below.
 - We strongly encourage you to work together on test cases, so that you don’t miss any edge case.
 
-**File:** `tests/6-max_integer_test.py`
+**File:** [tests/6-max_integer_test.py](tests/6-max_integer_test.py)
