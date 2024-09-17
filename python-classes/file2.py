@@ -1,23 +1,17 @@
 class Dog:
-    animal = 'dog'
 
-    def __init__(self, breed, color):
+    species = "pastor"
 
-        self.breed = breed
-        self.color = color
-Rodger = Dog("Pug", "brown")
-Buzo = Dog("Bulldog", "black")
+    def __init__(self, name, age):
+        self.__name = name
+        self.__age = age
 
-print('Rodger details:')
-print('Rodger is a', Rodger.animal)
-print('Breed: ', Rodger.breed)
-print('Color: ', Rodger.color)
+    def description(self):
+        return (f"The {self.__name} is {self.__age} years old")
 
-print('\nBuzo details:')
-print('Buzo is a', Buzo.animal)
-print('Breed: ', Buzo.breed)
-print('Color: ', Buzo.color)
+def main():
+    my_dog = Dog("Buddy", 18)
+    print(my_dog.description())
 
-print("\nAccessing class variable using class name")
-print(Dog.animal)
-
+if __name__ == "__main__":
+    main()
