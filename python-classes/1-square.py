@@ -1,11 +1,9 @@
 #!/usr/bin/python3
 """
-A class used to represent a Square.
+This module defines a Square class.
 
-Attributes
-----------
-__size : int
-    The size of the square (private).
+Classes:
+    Square: A class that defines a square by its size.
 """
 
 class Square:
@@ -18,12 +16,11 @@ class Square:
         The size of the square (private).
     """
 
-    def __init__ = (self, size):
+    def __init__(self, size):
         """
         Parameters
         ----------
         size : int
             The size of the square.
         """
-
         self.__size = size
