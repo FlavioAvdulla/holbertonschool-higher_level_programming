@@ -1,47 +1,52 @@
 #!/usr/bin/python3
+"""
+This module defines a `Square` class.
+
+Classes:
+    Square
+
+Exceptions:
+    TypeError
+    ValueError
+"""
+
+
 class Square:
     """
-    A class to represent a square.
+    A class used to represent a Square
 
-    Attributes:
-    -----------
+    ...
+
+    Attributes
+    ----------
     size : int
-        The size of the square's side.
+        the size of the square's side (default is 0)
     position : tuple
-        The position of the square for printing.
+        the position of the square (default is (0, 0))
 
-    Methods:
-    --------
+    Methods
+    -------
     area():
         Returns the area of the square.
     my_print():
-        Prints the square with the character '#'.
+        Prints the square with the character #.
     """
 
     def __init__(self, size=0, position=(0, 0)):
         """
-        Initializes the square with a given size and position.
-
-        Parameters:
-        -----------
+        Parameters
+        ----------
         size : int, optional
-            The size of the square's side (default is 0).
+            The size of the square's side (default is 0)
         position : tuple, optional
-            The position of the square for printing (default is (0, 0)).
+            The position of the square (default is (0, 0))
         """
         self.size = size
         self.position = position
 
     @property
     def size(self):
-        """
-        Retrieves the size of the square.
-
-        Returns:
-        --------
-        int
-            The size of the square's side.
-        """
+        """Gets the current size of the square."""
         return self.__size
 
     @size.setter
@@ -49,17 +54,17 @@ class Square:
         """
         Sets the size of the square.
 
-        Parameters:
-        -----------
+        Parameters
+        ----------
         value : int
-            The size of the square's side.
+            The size of the square's side
 
-        Raises:
-        -------
+        Raises
+        ------
         TypeError
-            If size is not an integer.
+            If size is not an integer
         ValueError
-            If size is less than 0.
+            If size is less than 0
         """
         if not isinstance(value, int):
             raise TypeError("size must be an integer")
@@ -69,14 +74,7 @@ class Square:
 
     @property
     def position(self):
-        """
-        Retrieves the position of the square.
-
-        Returns:
-        --------
-        tuple
-            The position of the square for printing.
-        """
+        """Gets the current position of the square."""
         return self.__position
 
     @position.setter
@@ -84,15 +82,15 @@ class Square:
         """
         Sets the position of the square.
 
-        Parameters:
-        -----------
+        Parameters
+        ----------
         value : tuple
-            The position of the square for printing.
+            The position of the square
 
-        Raises:
-        -------
+        Raises
+        ------
         TypeError
-            If position is not a tuple of 2 positive integers.
+            If position is not a tuple of 2 positive integers
         """
         if (not isinstance(value, tuple) or len(value) != 2 or
                 not all(isinstance(num, int) for num in value) or
@@ -102,20 +100,18 @@ class Square:
 
     def area(self):
         """
-        Calculates the area of the square.
+        Returns the area of the square.
 
-        Returns:
-        --------
+        Returns
+        -------
         int
-            The area of the square.
+            The area of the square
         """
         return self.__size ** 2
 
     def my_print(self):
         """
-        Prints the square with the character '#'.
-
-        If size is 0, prints an empty line.
+        Prints the square with the character #.
         """
         if self.__size == 0:
             print("")
