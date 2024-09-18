@@ -27,19 +27,4 @@ if __name__ == "__main__":
     main()
 
 
-
-
-
-
-# income_list = {
-#     "gerti": 400,
-#     "stilian": 1500,
-#     "flavio": 800,
-#     "hans": 1200
-# }
-
-# highest_value = max(check_incomes.values())
-#     print(highest_value)
-
-
 # Write a class People that produces this people with a private instance attribute income,adds them to a list,and is fed as an argument to another function along with a person object name
