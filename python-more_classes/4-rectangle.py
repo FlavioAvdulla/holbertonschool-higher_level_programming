@@ -110,11 +110,11 @@ class Rectangle:
                 new_string += "\n"
         return new_string
 
-        def __repr__(self):
-            """
-            Returns a string representation of the rectangle for debugging.
+    def __repr__(self):
+        """
+        Returns a string representation of the rectangle for debugging.
 
-            Returns:
-            str: A string representation of the rectangle.
-            """
-            return f"Rectangle({self.__width}, {self.__height})"
+        Returns:
+        str: A string representation of the rectangle.
+        """
+        return f"Rectangle({self.__width}, {self.__height})"
