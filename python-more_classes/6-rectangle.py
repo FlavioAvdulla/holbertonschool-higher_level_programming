@@ -5,14 +5,12 @@ Rectangle Module
 Defines a Rectangle class with width and height attributes.
 """
 
-
 class Rectangle:
     """
     Represents a rectangle.
 
     Attributes:
-    width (int): The width of the rectangle.
-    height (int): The height of the rectangle.
+    number_of_instances (int): The number of Rectangle instances.
     """
 
     number_of_instances = 0
@@ -27,6 +25,7 @@ class Rectangle:
         """
         self.width = width
         self.height = height
+        Rectangle.number_of_instances += 1
 
     @property
     def width(self):
