@@ -2,7 +2,7 @@
 """
 Rectangle Module
 
-This module provides a Rectangle class to represent a rectangle with width and height attributes.
+Provides a Rectangle class with width and height attributes.
 """
 
 
