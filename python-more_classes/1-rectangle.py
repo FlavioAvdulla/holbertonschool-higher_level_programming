@@ -1,4 +1,17 @@
 #!/usr/bin/python3
+"""
+Rectangle Module
+
+This module provides a Rectangle class to represent a rectangle with width and height attributes.
+
+Classes:
+    Rectangle
+
+Exceptions:
+    TypeError: Raised when the width or height is not an integer.
+    ValueError: Raised when the width or height is less than 0.
+"""
+
 class Rectangle:
     """
     A class used to represent a Rectangle
