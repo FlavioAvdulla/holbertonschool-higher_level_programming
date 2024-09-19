@@ -12,6 +12,7 @@ Exceptions:
     ValueError: Raised when the width or height is less than 0.
 """
 
+
 class Rectangle:
     """
     A class used to represent a Rectangle
