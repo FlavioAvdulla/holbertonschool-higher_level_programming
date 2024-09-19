@@ -5,7 +5,6 @@ Rectangle Module
 Provides a Rectangle class with width and height attributes.
 """
 
-
 class Rectangle:
     """
     Represents a rectangle.
@@ -93,13 +92,19 @@ class Rectangle:
         return 2 * (self.__width + self.__height)
 
     def __str__(self):
+        """
+        Returns a string representation of the rectangle using the `#` character.
+
+        Returns:
+        str: A string representation of the rectangle, or an empty string if width or height is 0.
+        """
         if self.__width == 0 or self.__height == 0:
             return ""
         new_string = ""
 
-        for i in range (self.__height):
-            for j in range (self.__width):
+        for i in range(self.__height):
+            for j in range(self.__width):
                 new_string += "#"
-            if i < self.__width - 1:
+            if i < self.__height - 1:
                 new_string += "\n"
         return new_string
