@@ -3,51 +3,25 @@
 Rectangle Module
 
 This module provides a Rectangle class to represent a rectangle with width and height attributes.
-
-Classes:
-    Rectangle
-
-Exceptions:
-    TypeError: Raised when the width or height is not an integer.
-    ValueError: Raised when the width or height is less than 0.
 """
 
 
 class Rectangle:
     """
-    A class used to represent a Rectangle
+    Represents a rectangle.
 
-    Attributes
-    ----------
-    width : int
-        The width of the rectangle (default is 0)
-    height : int
-        The height of the rectangle (default is 0)
-
-    Methods
-    -------
-    width():
-        Gets the width of the rectangle.
-    width(value):
-        Sets the width of the rectangle. Raises TypeError if value is not an integer.
-        Raises ValueError if value is less than 0.
-    height():
-        Gets the height of the rectangle.
-    height(value):
-        Sets the height of the rectangle. Raises TypeError if value is not an integer.
-        Raises ValueError if value is less than 0.
+    Attributes:
+    width (int): The width of the rectangle.
+    height (int): The height of the rectangle.
     """
 
     def __init__(self, width=0, height=0):
         """
-        Constructs all the necessary attributes for the rectangle object.
+        Initializes a Rectangle instance.
 
-        Parameters
-        ----------
-        width : int, optional
-            The width of the rectangle (default is 0)
-        height : int, optional
-            The height of the rectangle (default is 0)
+        Args:
+        width (int): The width of the rectangle. Default is 0.
+        height (int): The height of the rectangle. Default is 0.
         """
         self.width = width
         self.height = height
@@ -62,17 +36,12 @@ class Rectangle:
         """
         Sets the width of the rectangle.
 
-        Parameters
-        ----------
-        value : int
-            The width of the rectangle
+        Args:
+        value (int): The width of the rectangle.
 
-        Raises
-        ------
-        TypeError
-            If value is not an integer
-        ValueError
-            If value is less than 0
+        Raises:
+        TypeError: If value is not an integer.
+        ValueError: If value is less than 0.
         """
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
@@ -90,17 +59,12 @@ class Rectangle:
         """
         Sets the height of the rectangle.
 
-        Parameters
-        ----------
-        value : int
-            The height of the rectangle
+        Args:
+        value (int): The height of the rectangle.
 
-        Raises
-        ------
-        TypeError
-            If value is not an integer
-        ValueError
-            If value is less than 0
+        Raises:
+        TypeError: If value is not an integer.
+        ValueError: If value is less than 0.
         """
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
