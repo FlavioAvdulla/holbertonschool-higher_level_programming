@@ -159,9 +159,9 @@ class Rectangle:
         Creates a square rectangle.
 
         Args:
-        size (int): The size of the square sides. Default is 0.
+        size (int): Size of the square sides.
 
         Returns:
-        Rectangle: A new Rectangle instance with width and height equal to size.
+        Rectangle: New instance with width and height equal to size.
         """
         return cls(size, size)
