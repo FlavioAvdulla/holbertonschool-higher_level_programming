@@ -1,5 +1,3 @@
-# Test for 1-my_list.py
-
 >>> MyList = __import__('1-my_list').MyList
 
 # Test with a list of integers
