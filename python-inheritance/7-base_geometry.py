@@ -9,9 +9,10 @@ This module defines the BaseGeometry class.
 class BaseGeometry:
     """
     BaseGeometry class:
-
+    
     A base class for geometric operations.
     """
+
     def area(self):
         """
         Raises an Exception with the message 'area() is not implemented'.
@@ -30,7 +31,7 @@ class BaseGeometry:
             TypeError: If value is not an integer.
             ValueError: If value is not greater than 0.
         """
-            if value isinstance(self, int):
-                raise TypeError("<name> must be an integer")
-            if value <= 0:
-                raise ValueError("<name> must be greater than 0")
+        if not isinstance(value, int):
+            raise TypeError(f"{name} must be an integer")
+        if value <= 0:
+            raise ValueError(f"{name} must be greater than 0")
