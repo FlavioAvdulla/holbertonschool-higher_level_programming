@@ -3,13 +3,13 @@
 This module defines a MyList class that extends the built-in list class.
 
 Classes:
-    MyList: A subclass of list that includes a method to print the list in sorted order.
+    Defines MyList, a subclass of list with a method to print the list sorted.
 """
 
 
 class MyList(list):
     """
-    A subclass of the built-in list class that includes a method to print the list in sorted order.
+    A list subclass with a method to print the list sorted.
     """
 
     def print_sorted(self):
