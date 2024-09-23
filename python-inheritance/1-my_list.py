@@ -9,6 +9,7 @@ Methods:
     print_sorted(self): Prints the list in sorted order.
 """
 
+
 class Mylist(list):
     """
     Custom list class with an additional method to print the list sorted.
