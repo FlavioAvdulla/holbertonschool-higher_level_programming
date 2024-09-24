@@ -6,11 +6,12 @@ Classes:
     Square: Represents a square with methods to initialize and calculate its area.
 """
 
+
 BaseGeometry = __import__('9-rectangle').BaseGeometry
 
-class Square(BaseGeometry):
+class Square(Rectangle):
     """
-    A class used to represent a Square, inheriting from BaseGeometry
+    A class used to represent a Square, inheriting from Rectangle
 
     ...
 
