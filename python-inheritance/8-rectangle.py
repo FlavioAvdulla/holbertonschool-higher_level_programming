@@ -1,3 +1,21 @@
+#!/usr/bin/python3
+"""
+Rectangle Module
+
+This module provides a Rectangle class that inherits from BaseGeometry.
+The Rectangle class includes methods for initializing the rectangle with
+width and height, validating these dimensions, and providing a string
+representation of the rectangle.
+
+Classes:
+    Rectangle
+
+Usage Example:
+    >>> from rectangle import Rectangle
+    >>> r = Rectangle(3, 4)
+    >>> print(r)
+    [Rectangle] 3/4
+"""
 class Rectangle(BaseGeometry):
     """
     A class used to represent a Rectangle, inheriting from BaseGeometry.
