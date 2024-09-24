@@ -16,19 +16,15 @@ Usage Example:
     >>> print(r)
     [Rectangle] 3/4
 """
+
+
 class Rectangle(BaseGeometry):
     """
-    A class used to represent a Rectangle, inheriting from BaseGeometry.
+    A Rectangle class inheriting from BaseGeometry.
 
-    ...
-
-    Methods
-    -------
-    __init__(self, width, height)
-        Initializes the Rectangle with width and height, validating them as positive integers.
-
-    __Str__(self)
-        Returns a string representation of the Rectangle.
+    Methods:
+        __init__(self, width, height): Initializes with width and height.
+        __str__(self): Returns a string representation.
     """
 
     def __init__(self, width, height):
@@ -44,10 +40,11 @@ class Rectangle(BaseGeometry):
         ValueError: If width or height is not greater than 0.
         """
         self.integer_validator("width", width)
+        self.integer_validator("height", height)
         self.__width = width
         self.__height = height
 
-    def __Str__(self):
+    def __str__(self):
         """
         Returns a string representation of the Rectangle.
 
