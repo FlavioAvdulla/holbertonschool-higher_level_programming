@@ -18,6 +18,8 @@ Usage Example:
 """
 
 
+from base_geometry import BaseGeometry  # Ensure this import matches your actual module structure
+
 class Rectangle(BaseGeometry):
     """
     A Rectangle class inheriting from BaseGeometry.
