@@ -49,10 +49,10 @@ class Rectangle(Shape):
         return 2 * (self.width + self.height)
 
 
-# def shape_info(shape):
-#     """Print the area and perimeter of a shape."""
-#     try:
-#         print(f"Area: {shape.area()}")
-#         print(f"Perimeter: {shape.perimeter()}")
-#     except AttributeError:
-#         print("The provided object does not implement the required methods.")
+def shape_info(shape):
+    """Print the area and perimeter of a shape."""
+    try:
+        print(f"Area: {shape.area()}")
+        print(f"Perimeter: {shape.perimeter()}")
+    except AttributeError:
+        print("The provided object does not implement the required methods.")
