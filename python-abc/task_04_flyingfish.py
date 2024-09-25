@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-FlyingFish demonstrates multiple inheritance by combining Fish and Bird behaviors.
+FlyingFish combines Fish and Bird behaviors using multiple inheritance.
 """
 
 
@@ -12,6 +12,7 @@ class Fish:
     def habitat(self):
         print("The fish lives in water")
 
+
 class Bird:
     """Represents a bird with flying ability."""
     def fly(self):
@@ -19,6 +20,7 @@ class Bird:
 
     def habitat(self):
         print("The bird lives in the sky")
+
 
 class FlyingFish(Fish, Bird):
     """A fish that can also fly, inheriting from both Fish and Bird."""
