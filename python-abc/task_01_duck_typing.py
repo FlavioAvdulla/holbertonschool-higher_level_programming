@@ -56,11 +56,3 @@ def shape_info(shape):
         print(f"Perimeter: {shape.perimeter()}")
     except AttributeError:
         print("The provided object does not implement the required methods.")
-
-
-if __name__ == "__main__":
-    circle = Circle(radius=5)
-    rectangle = Rectangle(width=4, height=7)
-
-    shape_info(circle)
-    shape_info(rectangle)
