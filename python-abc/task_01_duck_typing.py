@@ -29,36 +29,47 @@ class Shape(ABC):
         """
         pass
 
-    class Circle(Shape):
-        """
-        Concrete class for a circle, inheriting from Shape.
-        """
-        def __init__(self, radius):
-            self.radius = radius
 
-        def area(self):
-            return math.pi * self.radius ** 2
+class Circle(Shape):
+    """
+    Concrete class for a circle, inheriting from Shape.
+    """
+    def __init__(self, radius):
+        self.radius = radius
 
-        def perimeter(self):
-            return 2 * math.pi * self.radius
+    def area(self):
+        return math.pi * self.radius ** 2
 
-    class Rectangle(Shape):
-        """
-        Concrete class for a rectangle, inheriting from Shape.
-        """
-        def __init__(self, width, height):
-            self.width = width
-            self.height = height
+    def perimeter(self):
+        return 2 * math.pi * self.radius
 
-        def area(self):
-            return self.width * self.height
 
-        def perimeter(self):
-            return 2 * (self.width + self.height)
+class Rectangle(Shape):
+    """
+    Concrete class for a rectangle, inheriting from Shape.
+    """
+    def __init__(self, width, height):
+        self.width = width
+        self.height = height
 
-    def shape_info(shape):
-        """
-        Print the perimeter and area of a shape.
-        """
-        print(f"Area: {shape.area()}")
-        print(f"Perimeter: {shape.perimeter()}")
+    def area(self):
+        return self.width * self.height
+
+    def perimeter(self):
+        return 2 * (self.width + self.height)
+
+
+def shape_info(shape):
+    """
+    Print the perimeter and area of a shape.
+    """
+    print(f"Perimeter: {shape.perimeter()}")
+    print(f"Area: {shape.area()}")
+
+
+if __name__ == "__main__":
+    circle = Circle(radius=5)
+    rectangle = Rectangle(width=4, height=7)
+
+    shape_info(circle)
+    shape_info(rectangle)
