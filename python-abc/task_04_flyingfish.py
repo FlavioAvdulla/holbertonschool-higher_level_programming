@@ -3,6 +3,7 @@
 FlyingFish demonstrates multiple inheritance by combining Fish and Bird behaviors.
 """
 
+
 class Fish:
     """Represents a fish with swimming ability."""
     def swim(self):
