@@ -3,8 +3,6 @@
 This module defines abstract and concrete classes for different shapes.
 It includes methods to calculate the area and perimeter of the shapes.
 """
-
-
 from abc import ABC, abstractmethod
 import math
 
