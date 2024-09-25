@@ -12,8 +12,6 @@ class Shape(ABC):
     """
     Abstract base class for shapes.
     """
-    def __init__(self):
-        pass
 
     @abstractmethod
     def area(self):
