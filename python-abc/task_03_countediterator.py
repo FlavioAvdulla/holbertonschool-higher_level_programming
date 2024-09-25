@@ -3,6 +3,7 @@
 CountedIterator extends the built-in iterator to count items iterated.
 """
 
+
 class CountedIterator:
     """Iterator that counts the number of items iterated."""
 
@@ -20,6 +21,10 @@ class CountedIterator:
     def get_count(self):
         """Return the current count of iterated items."""
         return self.count
+
+if __name__ == "__main__":
+    data = [1, 2, 3, 4]
+    counted_iter = CountedIterator(data)
 
     try:
         while True:
