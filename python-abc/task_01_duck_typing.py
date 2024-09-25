@@ -1,43 +1,42 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 """
-Demonstrates duck typing with abstract base classes for shapes.
+Module for shapes with area and perimeter calculations.
 """
-
 
 from abc import ABC, abstractmethod
-import math
 
 
 class Shape(ABC):
-    """Abstract base class for shapes."""
-
+    """
+    Abstract base class for shapes.
+    """
     @abstractmethod
     def area(self):
-        """Calculate the area of the shape."""
         pass
 
     @abstractmethod
     def perimeter(self):
-        """Calculate the perimeter of the shape."""
         pass
 
 
 class Circle(Shape):
-    """Circle class inheriting from Shape."""
-
+    """
+    Circle shape with radius.
+    """
     def __init__(self, radius):
         self.radius = radius
 
     def area(self):
-        return math.pi * self.radius ** 2
+        return 3.141592653589793 * self.radius ** 2
 
     def perimeter(self):
-        return 2 * math.pi * self.radius
+        return 2 * 3.141592653589793 * self.radius
 
 
 class Rectangle(Shape):
-    """Rectangle class inheriting from Shape."""
-
+    """
+    Rectangle shape with width and height.
+    """
     def __init__(self, width, height):
         self.width = width
         self.height = height
@@ -50,9 +49,12 @@ class Rectangle(Shape):
 
 
 def shape_info(shape):
-    """Print the area and perimeter of a shape."""
-    print(f"Area: {shape.area()}")
+    """
+    Print the perimeter and area of a shape.
+    """
     print(f"Perimeter: {shape.perimeter()}")
+    print(f"Area: {shape.area()}")
+
 
 if __name__ == "__main__":
     circle = Circle(radius=5)
