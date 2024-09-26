@@ -1,4 +1,4 @@
-# Python OOP Tasks
+# Python - Abstract Classes and Interfaces
 
 ## Table of Contents
 1. Abstract Animal Class and its Subclasses
