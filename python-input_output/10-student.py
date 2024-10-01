@@ -2,8 +2,11 @@
 """
 student_module.py
 
-This module defines the Student class, which represents a student with a first name, last name, and age.
+This module defines the Student class,
+which represents a student with a first name,
+last name, and age.
 """
+
 
 class Student:
     """
@@ -21,12 +24,14 @@ class Student:
     Methods
     -------
     to_json(attrs=None):
-        Retrieves a dictionary representation of a Student instance.
+        Retrieves a dictionary representation of a
+        Student instance.
     """
 
     def __init__(self, first_name, last_name, age):
         """
-        Constructs all the necessary attributes for the student object.
+        Constructs all the necessary attributes for the
+        student object.
 
         Parameters
         ----------
@@ -45,7 +50,8 @@ class Student:
         """
         Retrieves a dictionary representation of a Student instance.
 
-        If attrs is a list of strings, only attribute names contained in this list must be retrieved.
+        If attrs is a list of strings, only attribute names
+        contained in this list must be retrieved.
         Otherwise, all attributes must be retrieved.
 
         Parameters
@@ -61,4 +67,6 @@ class Student:
         if attrs is None:
             return self.__dict__
         else:
-            return {attr: getattr(self, attr) for attr in attrs if hasattr(self, attr)}
+            return {
+                getattr(self, attr) for attr in attrs if hasattr(self, attr)
+            }
