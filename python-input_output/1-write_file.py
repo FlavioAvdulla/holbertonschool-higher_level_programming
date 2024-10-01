@@ -10,7 +10,7 @@ def write_file(filename="", text=""):
     Writes a string to a text file.
 
     Args:
-        filename (str): File name. Defaults to an empty string.
+        filename (str): my_first_file. Defaults to an empty string.
         text (str): Text to write. Defaults to an empty string.
 
     Returns:
