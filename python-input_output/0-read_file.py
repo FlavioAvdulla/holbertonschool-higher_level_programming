@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
 File: 0-read_file.py
-Author: Your Name
+Author: Flavio Avdulla
 Reads and prints the contents of a text file.
 """
 
