@@ -68,5 +68,5 @@ class Student:
             return self.__dict__
         else:
             return {
-                getattr(self, attr) for attr in attrs if hasattr(self, attr)
+                attr: getattr(self, attr) for attr in attrs if hasattr(self, attr)
             }
