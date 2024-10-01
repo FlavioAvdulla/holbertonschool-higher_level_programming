@@ -77,11 +77,14 @@ class Student:
         Replaces all attributes of the Student instance with values from the json dictionary.
 
         Args:
-            json (dict): A dictionary where keys are attribute names and values are the new attribute values.
+            json (dict): A dictionary where keys 
+            are attribute names and values are the new 
+            attribute values.
 
         Example:
             student = Student()
-            student.reload_from_json({'name': 'John', 'age': 25})
+            student.reload_from_json(
+                {'name': 'John', 'age': 25})
         """
         for key, value in json.items():
             setattr(self, key, value)
