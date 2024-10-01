@@ -78,8 +78,8 @@ class Student:
         instance with values from the json dictionary.
 
         Args:
-            json (dict): A dictionary where keys 
-            are attribute names and values are the new 
+            json (dict): A dictionary where keys
+            are attribute names and values are the new
             attribute values.
 
         Example:
