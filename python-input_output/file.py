@@ -37,3 +37,12 @@ print(data)
 # How to access comand line parameters in a python script
 import sys
 print(sys.argv)
+
+# Get the current working directory and list all files
+import os
+current_directory = os.getcwd()
+print(f"Current Directory: {current_directory}")
+
+files_and_dirs = os.listdir(current_directory)
+print(f"Files and Directories: {files_and_dirs}")
+print()
