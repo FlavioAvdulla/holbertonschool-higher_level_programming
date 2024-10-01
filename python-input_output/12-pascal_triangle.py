@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """
-This module provides a function that returns a list of lists of
-integers representing the Pascals triangle of n:
+This module contains a function to generate Pascal's triangle up to a given number of rows.
 """
+
 
 def pascal_triangle(n):
     """
