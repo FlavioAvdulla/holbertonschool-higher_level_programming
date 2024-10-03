@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-"""
-Module for JSON serialization and deserialization.
-"""
+"""Module for JSON serialization and deserialization."""
 
 
 import json
