@@ -37,4 +37,3 @@ def convert_csv_to_json(csv_filename):
         return True
     except FileNotFoundError:
         return False
-$ python3 task_02_csv.py
