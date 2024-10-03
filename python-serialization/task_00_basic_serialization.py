@@ -1,12 +1,6 @@
 #!/usr/bin/python3
 """
 Module for JSON serialization and deserialization.
-
-Functions:
-- serialize_and_save_to_file(data, filename):
-Serialize a dictionary to a JSON file.
-- load_and_deserialize(filename): Deserialize a
-JSON file to a dictionary.
 """
 
 
