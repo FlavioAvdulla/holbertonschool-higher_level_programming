@@ -4,7 +4,7 @@ import json
 def serialize_and_save_to_file(data, filename):
     """
     Serialize a Python dictionary to a JSON file.
-    
+
     Parameters:
     data (dict): The Python dictionary to serialize.
     filename (str): The filename of the output JSON file. If the file exists, it will be replaced.
@@ -16,10 +16,10 @@ def serialize_and_save_to_file(data, filename):
 def load_and_deserialize(filename):
     """
     Load and deserialize a JSON file to a Python dictionary.
-    
+
     Parameters:
     filename (str): The filename of the input JSON file.
-    
+
     Returns:
     dict: The deserialized Python dictionary.
     """
