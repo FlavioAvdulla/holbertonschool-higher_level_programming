@@ -15,6 +15,7 @@ Functions:
 - fetch_and_save_posts(): Saves posts to a CSV file.
 """
 
+
 import requests
 import csv
 
@@ -33,7 +34,8 @@ def fetch_and_save_posts():
     response = requests.get('https://jsonplaceholder.typicode.com/posts')
     if response.status_code == 200:
         with open('posts.csv', 'w', newline='') as file:
-            writer = csv.DictWriter(file, fieldnames=['id', 'title', 'body'])
+            fieldnames = ['userId', 'id', 'title', 'body']  # Include all keys
+            writer = csv.DictWriter(file, fieldnames=fieldnames)
             writer.writeheader()
             writer.writerows(response.json())
 
