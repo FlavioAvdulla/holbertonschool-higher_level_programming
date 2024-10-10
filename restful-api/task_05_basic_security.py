@@ -6,7 +6,6 @@ HTTP Basic Auth and JWT. The script
 requires Python 3 interpreter.
 """
 
-
 from flask import Flask, jsonify, request
 from flask_httpauth import HTTPBasicAuth
 from flask_jwt_extended import (
@@ -29,8 +28,7 @@ def verify_password(username, password):
     """
     Verifies the password for a given username.
     """
-    if username in users and check_password_hash
-    (users.get(username), password):
+    if username in users and check_password_hash(users.get(username), password):
         return username
 
 
@@ -40,7 +38,7 @@ def basic_protected():
     """
     Endpoint protected by Basic Authentication.
     """
-    return "Basic Auth: Access Granted"
+    return "Basic Auth: Access Granted", 200
 
 
 app.config['JWT_SECRET_KEY'] = 'your_jwt_secret_key'
@@ -108,7 +106,7 @@ def admin_only():
     """
     Endpoint only accessible to users with the 'admin' role.
     """
-    return jsonify(msg="Admin Access: Granted")
+    return jsonify(msg="Admin Access: Granted"), 200
 
 
 @jwt.unauthorized_loader
