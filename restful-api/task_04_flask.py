@@ -1,15 +1,13 @@
 #!/usr/bin/python3
 """
 Flask API Example
-This script sets up a simple Flask API with multiple
-endpoints to manage user data.
+This script sets up a simple Flask API with
+multiple endpoints to manage user data.
 """
 
 from flask import Flask, jsonify, request
 
-
 app = Flask(__name__)
-
 
 users = {
     "jane": {
@@ -40,8 +38,7 @@ def status():
 @app.route('/data')
 def data():
     """
-    Data endpoint returns a list of all
-    usernames stored in the API.
+    Data endpoint returns a list of all usernames stored in the API.
     """
     return jsonify(list(users.keys()))
 
@@ -63,10 +60,12 @@ def get_user(username):
 @app.route('/add_user', methods=['POST'])
 def add_user():
     """
-    Add User endpoint accepts POST requests to add a new user.
+    Add User endpoint accepts POST requests toadd
+    a new user.
     Parses the incoming JSON data and adds
     the new user to the users dictionary.
-    Returns a confirmation message with the added user’s data.
+    Returns a confirmation message with the
+    added user’s data.
     """
     new_user = request.get_json()
     username = new_user.get('username')
