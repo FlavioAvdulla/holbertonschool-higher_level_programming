@@ -7,16 +7,11 @@ multiple endpoints to manage user data.
 
 from flask import Flask, jsonify, request
 
+
 app = Flask(__name__)
 
-users = {
-    "jane": {
-        "username": "jane",
-        "name": "Jane",
-        "age": 28,
-        "city": "Los Angeles"
-    }
-}
+
+users = {}
 
 
 @app.route('/')
@@ -30,7 +25,8 @@ def home():
 @app.route('/status')
 def status():
     """
-    Status endpoint returns OK to indicate the API is running.
+    Status endpoint returns OK to indicate the
+    API is running.
     """
     return "OK"
 
@@ -48,7 +44,8 @@ def get_user(username):
     """
     User endpoint returns the full object
     corresponding to the provided username.
-    If the user does not exist, returns an error message.
+    If the user does not exist, returns an
+    error message.
     """
     user = users.get(username)
     if user:
@@ -60,10 +57,10 @@ def get_user(username):
 @app.route('/add_user', methods=['POST'])
 def add_user():
     """
-    Add User endpoint accepts POST requests toadd
-    a new user.
-    Parses the incoming JSON data and adds
-    the new user to the users dictionary.
+    Add User endpoint accepts POST requests to
+    add a new user.
+    Parses the incoming JSON data and adds the
+    new user to the users dictionary.
     Returns a confirmation message with the
     added user’s data.
     """
@@ -71,6 +68,8 @@ def add_user():
     username = new_user.get('username')
     if not username:
         return jsonify({"error": "Username is required"}), 400
+    if username in users:
+        return jsonify({"error": "Username already exists"}), 400
     users[username] = new_user
     return jsonify({"message": "User added", "user": new_user})
 
