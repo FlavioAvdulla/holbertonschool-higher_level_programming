@@ -1,3 +1,3 @@
--- Script to list all databases
+-- Check if database exists, create if it doesn't
 
-CREATE DATABASE hbtn_0c_0;
+CREATE DATABASE IF IF NOT EXISTS hbtn_0c_0;
