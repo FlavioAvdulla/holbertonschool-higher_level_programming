@@ -1,3 +1,4 @@
--- Script to print the table description
+-- Print the first description of a table.
 
-SHOW CREATE TABLE first_table;
+SHOW CREATE first_table;
+ 
