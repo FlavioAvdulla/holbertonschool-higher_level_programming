@@ -1,4 +1,4 @@
--- Script that lists all records of the table.
+-- Select the score and name columns from the second_table
 
 SELECT score, name
 FROM second_table
