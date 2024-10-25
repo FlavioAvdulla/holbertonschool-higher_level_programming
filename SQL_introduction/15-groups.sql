@@ -1,6 +1,5 @@
--- Select the score and name columns from the second_table
+-- Select the score and the count of records for each score as 'number'
 
-SELECT score, name
+SELECT score, COUNT(score) AS number
 FROM second_table
-WHERE name IS NOT NULL
-ORDER BY score DESC;
+GROUP BY scoreORDER BY number DESC;
