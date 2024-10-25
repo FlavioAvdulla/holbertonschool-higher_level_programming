@@ -1,0 +1,4 @@
+-- A script that computes the score average of all records.
+
+SELECT AVG(average)
+FROM second_table;
