@@ -2,8 +2,8 @@
 -- Each record displays: <TV Show genre> - <Number of shows linked to this genre>
 -- First column must be called genre
 -- Second column must be called number_of_shows
--- Don't display a genre that doesn't have any shows linked
--- Results are sorted in descending order by the number of shows linked.
+-- Don’t display a genre that doesn’t have any shows linked
+-- Results are sorted in descending order by the number of shows linked
 
 SELECT genres.name AS genre, COUNT(tv_shows.id) AS number_of_shows
 FROM genres
