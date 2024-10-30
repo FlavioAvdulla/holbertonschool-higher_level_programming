@@ -19,10 +19,16 @@ if __name__ == "__main__":
     Base.metadata.create_all(eng)
 
     session = Session(bind=eng)
+    new_state = State(name='Louisiana')
+    session.add(new_state)
+    session.commit()
+    results = session.query(State.id)\
+                     .where(State.name == 'Louisiana')\
+                     .all()
 
-    results = session.query(State)\
-                     .filter(State.name.like('%a%'))\
-                     .order_by(State.id).all()
-    for row in results:
-        print(f'{row.id}: {row.name}')
+    if len(results) > 0:
+        for row in results:
+            print(row.id)
+    else:
+        print("Not found")
     session.close()
