@@ -1,3 +1,8 @@
+#!/usr/bin/python3
+"""
+Start link class to table in database
+"""
+
 
 import sys
 from model_state import Base, State
@@ -14,7 +19,7 @@ if __name__ == "__main__":
     Base.metadata.create_all(eng)
 
     session = Session(bind=eng)
-    new_state = sTATE(name='Louisiana')
+    new_state = State(name='Louisiana')
     session.add(new_state)
     session.commit()
     results = session.query(State.id)\
@@ -27,3 +32,4 @@ if __name__ == "__main__":
     else:
         print("Not found")
     session.close()
+    
