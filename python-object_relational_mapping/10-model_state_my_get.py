@@ -20,9 +20,9 @@ if __name__ == "__main__":
 
     session = Session(bind=eng)
     results = session.query(State.id)\
-                    .where(State.name == sys.argv[4])\
-                    .all()
-    
+                     .where(State.name == sys.argv[4])\
+                     .all()
+
     if len(results) > 0:
         for row in results:
             print(row.id)
