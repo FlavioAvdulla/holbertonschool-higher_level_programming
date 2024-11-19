@@ -1,241 +1,228 @@
-SQL - Introduction
-Table of Contents
-List databases
+# SQL - More Queries
 
-0-list_databases.sql
+## Table of Contents
+1. [My privileges!](#0-my-privileges)
+2. [Root user](#1-root-user)
+3. [Read user](#2-read-user)
+4. [Always a name](#3-always-a-name)
+5. [ID can't be null](#4-id-cant-be-null)
+6. [Unique ID](#5-unique-id)
+7. [States table](#6-states-table)
+8. [Cities table](#7-cities-table)
+9. [Cities of California](#8-cities-of-california)
+10. [Cities by States](#9-cities-by-states)
+11. [Genre ID by show](#10-genre-id-by-show)
+12. [Genre ID for all shows](#11-genre-id-for-all-shows)
+13. [No genre](#12-no-genre)
+14. [Number of shows by genre](#13-number-of-shows-by-genre)
+15. [My genres](#14-my-genres)
+16. [Only Comedy](#15-only-comedy)
+17. [List shows and genres](#16-list-shows-and-genres)
 
-Create a database
+## Tasks
 
-1-create_database_if_missing.sql
+### 0. My privileges!
+Write a script that lists all privileges of the MySQL users `user_0d_1` and `user_0d_2` on your server (in localhost).
 
-Delete a database
+**File:** `0-privileges.sql`
 
-2-remove_database.sql
+### 1. Root user
+Write a script that creates the MySQL server user `user_0d_1`.
 
-List tables
+- `user_0d_1` should have all privileges on your MySQL server.
+- The `user_0d_1` password should be set to `user_0d_1_pwd`.
+- If the user `user_0d_1` already exists, your script should not fail.
 
-3-list_tables.sql
+**File:** `1-create_user.sql`
 
-First table
+### 2. Read user
+Write a script that creates the database `hbtn_0d_2` and the user `user_0d_2`.
 
-4-first_table.sql
+- `user_0d_2` should have only SELECT privilege in the database `hbtn_0d_2`.
+- The `user_0d_2` password should be set to `user_0d_2_pwd`.
+- If the database `hbtn_0d_2` already exists, your script should not fail.
+- If the user `user_0d_2` already exists, your script should not fail.
 
-Full description
+**File:** `2-create_read_user.sql`
 
-5-full_table.sql
+### 3. Always a name
+Write a script that creates the table `force_name` on your MySQL server.
 
-List all in table
+**force_name description:**
+- `id` INT
+- `name` VARCHAR(256) can’t be null
 
-6-list_values.sql
+- The database name will be passed as an argument of the mysql command.
+- If the table `force_name` already exists, your script should not fail.
 
-First add
+**File:** `3-force_name.sql`
 
-7-insert_value.sql
+### 4. ID can't be null
+Write a script that creates the table `id_not_null` on your MySQL server.
 
-Count 89
+**id_not_null description:**
+- `id` INT with the default value 1
+- `name` VARCHAR(256)
 
-8-count_89.sql
+- The database name will be passed as an argument of the mysql command.
+- If the table `id_not_null` already exists, your script should not fail.
 
-Full creation
+**File:** `4-never_empty.sql`
 
-9-full_creation.sql
+### 5. Unique ID
+Write a script that creates the table `unique_id` on your MySQL server.
 
-List by best
+**unique_id description:**
+- `id` INT with the default value 1 and must be unique
+- `name` VARCHAR(256)
 
-10-top_score.sql
+- The database name will be passed as an argument of the mysql command.
+- If the table `unique_id` already exists, your script should not fail.
 
-Select the best
+**File:** `5-unique_id.sql`
 
-11-best_score.sql
+### 6. States table
+Write a script that creates the database `hbtn_0d_usa` and the table `states` (in the database `hbtn_0d_usa`) on your MySQL server.
 
-Cheating is bad
+**states description:**
+- `id` INT unique, auto generated, can’t be null and is a primary key
+- `name` VARCHAR(256) can’t be null
 
-12-no_cheating.sql
+- If the database `hbtn_0d_usa` already exists, your script should not fail.
+- If the table `states` already exists, your script should not fail.
 
-Score too low
+**File:** `6-states.sql`
 
-13-change_class.sql
+### 7. Cities table
+Write a script that creates the database `hbtn_0d_usa` and the table `cities` (in the database `hbtn_0d_usa`) on your MySQL server.
 
-Average
+**cities description:**
+- `id` INT unique, auto generated, can’t be null and is a primary key
+- `state_id` INT, can’t be null and must be a FOREIGN KEY that references `id` of the `states` table
+- `name` VARCHAR(256) can’t be null
 
-14-average.sql
+- If the database `hbtn_0d_usa` already exists, your script should not fail.
+- If the table `cities` already exists, your script should not fail.
 
-Number by score
+**File:** `7-cities.sql`
 
-15-groups.sql
+### 8. Cities of California
+Write a script that lists all the cities of California that can be found in the database `hbtn_0d_usa`.
 
-Say my name
+- The `states` table contains only one record where `name = California` (but the `id` can be different, as per the example).
+- Results must be sorted in ascending order by `cities.id`.
+- You are not allowed to use the JOIN keyword.
+- The database name will be passed as an argument of the mysql command.
 
-16-no_link.sql
+**File:** `8-cities_of_california_subquery.sql`
 
-List databases
-0-list_databases.sql
-Write a script that lists all databases of your MySQL server.
+### 9. Cities by States
+Write a script that lists all cities contained in the database `hbtn_0d_usa`.
 
-Create a database
-1-create_database_if_missing.sql
-Write a script that creates the database hbtn_0c_0 in your MySQL server.
+Each record should display:
+- `cities.id - cities.name - states.name`
 
-If the database hbtn_0c_0 already exists, your script should not fail
+- Results must be sorted in ascending order by `cities.id`.
+- You can use only one SELECT statement.
+- The database name will be passed as an argument of the mysql command.
 
-You are not allowed to use the SELECT or SHOW statements
+**File:** `9-cities_by_state_join.sql`
 
-Delete a database
-2-remove_database.sql
-Write a script that deletes the database hbtn_0c_0 in your MySQL server.
+### 10. Genre ID by show
+Import the database dump from `hbtn_0d_tvshows` to your MySQL server.
 
-If the database hbtn_0c_0 doesn’t exist, your script should not fail
+Write a script that lists all shows contained in `hbtn_0d_tvshows` that have at least one genre linked.
 
-You are not allowed to use the SELECT or SHOW statements
+Each record should display:
+- `tv_shows.title - tv_show_genres.genre_id`
 
-List tables
-3-list_tables.sql
-Write a script that lists all the tables of a database in your MySQL server.
+- Results must be sorted in ascending order by `tv_shows.title` and `tv_show_genres.genre_id`.
+- You can use only one SELECT statement.
+- The database name will be passed as an argument of the mysql command.
 
-The database name will be passed as an argument of the mysql command
+**File:** `10-genre_id_by_show.sql`
 
-First table
-4-first_table.sql
-Write a script that creates a table called first_table in the current database in your MySQL server.
+### 11. Genre ID for all shows
+Import the database dump of `hbtn_0d_tvshows` to your MySQL server (same as `10-genre_id_by_show.sql`).
 
-first_table description:
+Write a script that lists all shows contained in the database `hbtn_0d_tvshows`.
 
-id INT
+Each record should display:
+- `tv_shows.title - tv_show_genres.genre_id`
 
-name VARCHAR(256)
+- Results must be sorted in ascending order by `tv_shows.title` and `tv_show_genres.genre_id`.
+- If a show doesn’t have a genre, display NULL.
+- You can use only one SELECT statement.
+- The database name will be passed as an argument of the mysql command.
 
-The database name will be passed as an argument of the mysql command
+**File:** `11-genre_id_all_shows.sql`
 
-If the table first_table already exists, your script should not fail
+### 12. No genre
+Import the database dump from `hbtn_0d_tvshows` to your MySQL server (same as `11-genre_id_all_shows.sql`).
 
-You are not allowed to use the SELECT or SHOW statements
+Write a script that lists all shows contained in `hbtn_0d_tvshows` without a genre linked.
 
-Full description
-5-full_table.sql
-Write a script that prints the following description of the table first_table from the database hbtn_0c_0 in your MySQL server.
+Each record should display:
+- `tv_shows.title - tv_show_genres.genre_id`
 
-The database name will be passed as an argument of the mysql command
+- Results must be sorted in ascending order by `tv_shows.title` and `tv_show_genres.genre_id`.
+- You can use only one SELECT statement.
+- The database name will be passed as an argument of the mysql command.
 
-You are not allowed to use the DESCRIBE or EXPLAIN statements
+**File:** `12-no_genre.sql`
 
-List all in table
-6-list_values.sql
-Write a script that lists all rows of the table first_table from the database hbtn_0c_0 in your MySQL server.
+### 13. Number of shows by genre
+Import the database dump from `hbtn_0d_tvshows` to your MySQL server (same as `12-no_genre.sql`).
 
-All fields should be printed
+Write a script that lists all genres from `hbtn_0d_tvshows` and displays the number of shows linked to each.
 
-The database name will be passed as an argument of the mysql command
+Each record should display:
+- `<TV Show genre> - <Number of shows linked to this genre>`
 
-First add
-7-insert_value.sql
-Write a script that inserts a new row in the table first_table (database hbtn_0c_0) in your MySQL server.
+- First column must be called `genre`.
+- Second column must be called `number_of_shows`.
+- Don’t display a genre that doesn’t have any shows linked.
+- Results must be sorted in descending order by the number of shows linked.
+- You can use only one SELECT statement.
+- The database name will be passed as an argument of the mysql command.
 
-New row:
+**File:** `13-count_shows_by_genre.sql`
 
-id = 89
+### 14. My genres
+Import the database dump from `hbtn_0d_tvshows` to your MySQL server (same as `13-count_shows_by_genre.sql`).
 
-name = Best School
+Write a script that uses the `hbtn_0d_tvshows` database to list all genres of the show Dexter.
 
-The database name will be passed as an argument of the mysql command
+- The `tv_shows` table contains only one record where `title = Dexter` (but the `id` can be different).
+- Each record should display: `tv_genres.name`.
+- Results must be sorted in ascending order by the genre name.
+- You can use only one SELECT statement.
+- The database name will be passed as an argument of the mysql command.
 
-Count 89
-8-count_89.sql
-Write a script that displays the number of records with id = 89 in the table first_table of the database hbtn_0c_0 in your MySQL server.
+**File:** `14-my_genres.sql`
 
-The database name will be passed as an argument of the mysql command
+### 15. Only Comedy
+Import the database dump from `hbtn_0d_tvshows` to your MySQL server (same as `14-my_genres.sql`).
 
-Full creation
-9-full_creation.sql
-Write a script that creates a table second_table in the database hbtn_0c_0 in your MySQL server and add multiples rows.
+Write a script that lists all Comedy shows in the database `hbtn_0d_tvshows`.
 
-second_table description:
+- The `tv_genres` table contains only one record where `name = Comedy` (but the `id` can be different).
+- Each record should display: `tv_shows.title`.
+- Results must be sorted in ascending order by the show title.
+- You can use only one SELECT statement.
+- The database name will be passed as an argument of the mysql command.
 
-id INT
+**File:** `15-comedy_only.sql`
 
-name VARCHAR(256)
+### 16. List shows and genres
+Import the database dump from `hbtn_0d_tvshows` to your MySQL server (same as `15-comedy_only.sql`).
 
-score INT
+Write a script that lists all shows, and all genres linked to that show, from the database `hbtn_0d_tvshows`.
 
-The database name will be passed as an argument to the mysql command
+- If a show doesn’t have a genre, display NULL in the genre column.
+- Each record should display: `tv_shows.title - tv_genres.name`.
+- Results must be sorted in ascending order by the show title and genre name.
+- You can use only one SELECT statement.
+- The database name will be passed as an argument of the mysql command.
 
-If the table second_table already exists, your script should not fail
-
-You are not allowed to use the SELECT and SHOW statements
-
-Your script should create these records:
-
-id = 1, name = “John”, score = 10
-
-id = 2, name = “Alex”, score = 3
-
-id = 3, name = “Bob”, score = 14
-
-id = 4, name = “George”, score = 8
-
-List by best
-10-top_score.sql
-Write a script that lists all records of the table second_table of the database hbtn_0c_0 in your MySQL server.
-
-Results should display both the score and the name (in this order)
-
-Records should be ordered by score (top first)
-
-The database name will be passed as an argument of the mysql command
-
-Select the best
-11-best_score.sql
-Write a script that lists all records with a score >= 10 in the table second_table of the database hbtn_0c_0 in your MySQL server.
-
-Results should display both the score and the name (in this order)
-
-Records should be ordered by score (top first)
-
-The database name will be passed as an argument of the mysql command
-
-Cheating is bad
-12-no_cheating.sql
-Write a script that updates the score of Bob to 10 in the table second_table.
-
-You are not allowed to use Bob’s id value, only the name field
-
-The database name will be passed as an argument of the mysql command
-
-Score too low
-13-change_class.sql
-Write a script that removes all records with a score <= 5 in the table second_table of the database hbtn_0c_0 in your MySQL server.
-
-The database name will be passed as an argument of the mysql command
-
-Average
-14-average.sql
-Write a script that computes the score average of all records in the table second_table of the database hbtn_0c_0 in your MySQL server.
-
-The result column name should be average
-
-The database name will be passed as an argument of the mysql command
-
-Number by score
-15-groups.sql
-Write a script that lists the number of records with the same score in the table second_table of the database hbtn_0c_0 in your MySQL server.
-
-The result should display:
-
-The score
-
-The number of records for this score with the label number
-
-The list should be sorted by the number of records (descending)
-
-The database name will be passed as an argument to the mysql command
-
-Say my name
-16-no_link.sql
-Write a script that lists all records of the table second_table of the database hbtn_0c_0 in your MySQL server.
-
-Don’t list rows without a name value
-
-Results should display the score and the name (in this order)
-
-Records should be listed by descending score
-
-The database name will be passed as an argument to the mysql command
+**File:** `16-shows_by_genre.sql`
