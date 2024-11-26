@@ -1,54 +1,85 @@
-# Python Project
+# Holberton School Higher Level Programming
 
-## Author's Disclaimer
+This repository contains various projects completed as part of the Holberton School's higher level programming curriculum. Below is a list of directories included in this repository along with a brief description of each project.
 
-Welcome to the Python world!
+## Table of Contents
+1. [SQL Introduction](#sql_introduction)
+2. [SQL More Queries](#sql_more_queries)
+3. [JavaScript DOM Manipulation](#javascript-dom_manipulation)
+4. [Python ABC](#python-abc)
+5. [Python Classes](#python-classes)
+6. [Python Data Structures](#python-data_structures)
+7. [Python Exceptions](#python-exceptions)
+8. [Python Hello World](#python-hello_world)
+9. [Python If Else Loops Functions](#python-if_else_loops_functions)
+10. [Python Import Modules](#python-import_modules)
+11. [Python Inheritance](#python-inheritance)
+12. [Python Input Output](#python-input_output)
+13. [Python More Classes](#python-more_classes)
+14. [Python More Data Structures](#python-more_data_structures)
+15. [Python Object Relational Mapping](#python-object_relational_mapping)
+16. [Python Serialization](#python-serialization)
+17. [Python Server Side Rendering](#python-server_side_rendering)
+18. [Python Test Driven Development](#python-test_driven_development)
+19. [RESTful API](#restful-api)
 
-You'll soon find that with Python (and the majority of higher level languages), there are ten different ways to do the same thing. Some tasks will expect only one implementation, while other tasks will have multiple possible implementations. Python has a linter/style guide called PEP8, also now known as PyCode. At Holberton, we won't start off with using PyCode, because it's much more strict compared to PEP8. Don't worry if you see a warning when you are running PEP8, you can ignore it.
+## Directories
 
-Enjoy!
+### SQL Introduction
+An introduction to SQL, including basic commands for creating databases and tables, inserting data, and querying data.
 
-- Guillaume
+### SQL More Queries
+Advanced SQL queries, focusing on complex joins, subqueries, and indexing.
 
-## Resources
+### JavaScript DOM Manipulation
+Projects related to manipulating the Document Object Model (DOM) using JavaScript.
 
-Read or watch:
+### Python ABC
+Introduction to Abstract Base Classes in Python and how to use them to create flexible and reusable code.
 
-- Learn to Program
-- Whetting Your Appetite
-- Using the Python Interpreter
-- An Informal Introduction to Python (Read up until “3.1.2. Strings” included)
-- How To Use String Formatters in Python 3
-- Pycodestyle – Style Guide for Python Code
+### Python Classes
+Fundamentals of object-oriented programming in Python, including defining classes and creating objects.
 
-## Learning Objectives
+### Python Data Structures
+Various data structures implemented in Python, such as lists, dictionaries, and sets.
 
-At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
+### Python Exceptions
+Handling errors and exceptions in Python programs to ensure smooth execution.
 
-### General
+### Python Hello World
+Basic Python scripts to get started with programming, including the classic "Hello, World!" program.
 
-- How to use the Python interpreter
-- How to print text and variables using `print`
-- How to use strings
-- What are indexing and slicing in Python
-- What is the official Python coding style and how to check your code with `pycodestyle`
+### Python If Else Loops Functions
+Control flow in Python, including if statements, loops, and function definitions.
 
-## Requirements
+### Python Import Modules
+Using and creating modules in Python to organize and reuse code efficiently.
 
-### Python Scripts
+### Python Inheritance
+Implementing inheritance in Python to create hierarchies of related classes.
 
-- Allowed editors: `vi`, `vim`, `emacs`
-- All your files will be interpreted/compiled on Ubuntu 20.04 LTS using `python3` (version 3.8.*)
-- All your files should end with a new line
-- The first line of all your files should be exactly `#!/usr/bin/python3`
-- A `README.md` file at the root of the repo, containing a description of the repository
-- A `README.md` file, at the root of the folder of this project, is mandatory
-- Your code should use the `pycodestyle` (version 2.7.*)
-- All your files must be executable
-- The length of your files will be tested using `wc`
+### Python Input Output
+Reading from and writing to files in Python, including handling different file formats.
 
-## More Info
+### Python More Classes
+Advanced topics in Python classes, including class methods, static methods, and properties.
 
-### Pycodestyle
+### Python More Data Structures
+Further exploration of Python data structures, including queues, stacks, and linked lists.
 
-Pycodestyle is now the new standard of Python style code.
+### Python Object Relational Mapping
+Using Object-Relational Mapping (ORM) techniques to interact with databases in Python.
+
+### Python Serialization
+Techniques for serializing and deserializing Python objects, including using JSON and pickle.
+
+### Python Server Side Rendering
+Server-side rendering techniques in Python for building dynamic web applications.
+
+### Python Test Driven Development
+Writing tests for Python code and using test-driven development (TDD) principles.
+
+### RESTful API
+Building and consuming RESTful APIs in Python, including using frameworks like Flask and Django.
+
+Feel free to explore each directory for more detailed information on the individual projects and exercises completed.
