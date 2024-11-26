@@ -83,3 +83,9 @@ Writing tests for Python code and using test-driven development (TDD) principles
 Building and consuming RESTful APIs in Python, including using frameworks like Flask and Django.
 
 Feel free to explore each directory for more detailed information on the individual projects and exercises completed.
+
+## Contact
+For any inquiries or issues, feel free to reach out to us:
+
+- Email: **a.flavio4366@gmail.com**
+- Phone: **+355 67 63 11 918**
