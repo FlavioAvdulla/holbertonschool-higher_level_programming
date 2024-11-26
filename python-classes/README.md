@@ -1,4 +1,4 @@
-# Square Class Tasks
+# python-classes
 
 ## Table of Contents
 1. My First Square
