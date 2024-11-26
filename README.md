@@ -7,7 +7,7 @@ This repository contains various projects completed as part of the Holberton Sch
 2. [SQL More Queries]([#sql_more_queries](https://github.com/FlavioAvdulla/holbertonschool-higher_level_programming/tree/main/SQL_more_queries))
 3. [JavaScript DOM Manipulation]([#javascript-dom_manipulation](https://github.com/FlavioAvdulla/holbertonschool-higher_level_programming/tree/main/javascript-dom_manipulation))
 4. [Python ABC]([#python-abc](https://github.com/FlavioAvdulla/holbertonschool-higher_level_programming/tree/main/python-abc))
-5. [Python Classes]([#python-classes](https://github.com/FlavioAvdulla/holbertonschool-higher_level_programming/blob/main/python-classes/README.md))
+5. [Python Classes]([#python-classes](https://github.com/FlavioAvdulla/holbertonschool-higher_level_programming/blob/main/python-classes/README.md)
 6. [Python Data Structures]([#python-data_structures](https://github.com/FlavioAvdulla/holbertonschool-higher_level_programming/tree/main/python-data_structures))
 7. [Python Exceptions]([#python-exceptions](https://github.com/FlavioAvdulla/holbertonschool-higher_level_programming/tree/main/python-exceptions))
 8. [Python Hello World]([#python-hello_world](https://github.com/FlavioAvdulla/holbertonschool-higher_level_programming/tree/main/python-hello_world))
