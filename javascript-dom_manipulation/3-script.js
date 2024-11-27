@@ -1,10 +1,9 @@
-let header = document.querySelector("header");
-const toggle_header = document.getElementById("toggle_header");
-
-toggle_header.addEventListener("click", () => {
-    if (header.classList.toggle("green")) {
-        header.classList.add("red");
+const header = document.querySelector("header");
+const change = document.getElementById("toggle_header");
+change.addEventListener("click", function () {
+    if (header.className === "green") {
+        header.className = "red";
     } else {
-        header.classList.add("red");
+        header.className = "green";
     }
-})
+});

@@ -1,6 +1,4 @@
-let header = document.querySelector("header");
-const red_header = document.getElementById("red_header");
-
-red_header.addEventListener("click", function() {
-    header.style.color = "#FF0000";
-});
+function CambiarColor() {
+    const header = document.querySelector("header");
+    header.className = "task_complete";
+};
